@@ -1,6 +1,5 @@
-# Title
+# BOM
 
-## BOM
 | Name | Image |
 | :---: | --- |
 | M3 screw | <a href="./m3_screw.jpg"><img src="./m3_screw.jpg" width="100" height="100"></a> | 
