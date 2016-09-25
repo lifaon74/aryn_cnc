@@ -12,7 +12,7 @@ The final should result in a low cost "professional" CNC tool able to work in 50
 
 ## Table of Content
 1. [x] [Frame](./documentation/frame/frame.md)
-2. [ ] [Axis]
+2. [ ] Axis
 	* [ ] [X](./documentation/x_axis/x_axis.md)
 	* [x] [Y](./documentation/y_axis/y_axis.md) - TODO Doc
 	* [x] [Z](./documentation/z_axis/z_axis.md) - TODO Doc
