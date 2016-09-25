@@ -11,8 +11,11 @@ The final should result in a low cost "professional" CNC tool able to work in 50
 * **low cost** : far under the professional market (estimated around 500$) but with same or better results.
 
 ## Table of Content
-1. [Frame](./documentation/frame/frame.md)
-
+1. [x] [Frame](./documentation/frame/frame.md)
+2. [ ] [Axis]
+	* [ ] [X](./documentation/x_axis/x_axis.md)
+	* [x] [Y](./documentation/y_axis/y_axis.md) - TODO Doc
+	* [x] [Z](./documentation/z_axis/z_axis.md) - TODO Doc
 
 **The project is still in progress, some parts may change and it's not my full time job (don't expect it will be finished fast). This git is here to share my work. Fell free to test, contribute, improve or comment (create issues for that).**
 
