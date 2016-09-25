@@ -10,11 +10,19 @@
 
 ### Y carriage x 2
 #### BOM
+##### Bearings
 | Quantity | Name |
 | :---: | --- |
-| 18 | [M3 screw](../bom/bom.md) 8~10mm | 
-| 18 | [M3 washer](../bom/bom.md) | 
-| 18 | [M3 nut](../bom/bom.md) | 
+| 8 | [M3 screw](../bom/bom.md) 16mm | 
+| 32 | [M3 washer](../bom/bom.md) | 
+| 8 | [M3 self locking nut](../bom/bom.md) | 
+| 8 | [623ZZ bearing](../bom/bom.md) | 
+
+##### Fixing
+| Quantity | Name |
+| :---: | --- |
+| 8 | [M3 screw](../bom/bom.md) 16mm | 
+| 8 | [M3 nut](../bom/bom.md) | 
 
 #### Print details
 * Files: [cariage_bot.stl](../models/XYZ/motors_cariages/cariage/cariage_bot.stl), [cariage_top.stl](../models/XYZ/motors_cariages/cariage/cariage_top.stl)
