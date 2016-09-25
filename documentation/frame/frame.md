@@ -55,6 +55,7 @@
 * Support: Yes
 
 ## Build steps
+When you'll cut the extruded aluminum bar, take care to be really precise else you could have some problem while building the frame.
 
 <a href="./DSC_0014.JPG"><img src="./DSC_0014.JPG" height="500"></a>
 <a href="./DSC_0015.JPG"><img src="./DSC_0015.JPG" height="500"></a>
@@ -66,4 +67,3 @@
 <a href="./DSC_0020.JPG"><img src="./DSC_0020.JPG" height="500"></a>
 <a href="./DSC_0021.JPG"><img src="./DSC_0021.JPG" height="500"></a>
 <a href="./DSC_0022.JPG"><img src="./DSC_0022.JPG" height="500"></a>
-<a href="./DSC_0024.JPG"><img src="./DSC_0024.JPG" height="500"></a>
