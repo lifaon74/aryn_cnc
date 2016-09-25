@@ -17,7 +17,7 @@
 | 18 | [M3 T nut](../bom/bom.md) | 
 
 #### Print details
-* File: [model.stl](../models/frame/corner_3d_top.stl)
+* File: [corner_3d_top.stl](../models/frame/corner_3d_top.stl)
 * Time: 6h
 * Layer height: 0.2mm
 * Weight: 72g
@@ -33,7 +33,7 @@
 | 1 | [M6 nut](../bom/bom.md) | 
 
 #### Print details
-* File: [model.stl](../models/frame/corner_3d_bot.stl)
+* File: [corner_3d_bot.stl](../models/frame/corner_3d_bot.stl)
 * Time: 6h
 * Layer height: 0.2mm
 * Weight: 72g
@@ -48,7 +48,7 @@
 | 14 | [M3 T nut](../bom/bom.md) | 
 
 #### Print details
-* File: [model.stl](../models/frame/corner_2d.stl)
+* File: [corner_2d.stl](../models/frame/corner_2d.stl)
 * Time: 3h
 * Layer height: 0.2mm
 * Weight: 48g
@@ -57,4 +57,13 @@
 ## Build steps
 
 <a href="./DSC_0014.JPG"><img src="./DSC_0014.JPG" height="500"></a>
+<a href="./DSC_0015.JPG"><img src="./DSC_0015.JPG" height="500"></a>
+<a href="./DSC_0018.JPG"><img src="./DSC_0018.JPG" height="500"></a>
+<a href="./DSC_0016.JPG"><img src="./DSC_0016.JPG" height="500"></a>
+<a href="./DSC_0017.JPG"><img src="./DSC_0017.JPG" height="500"></a>
 
+<a href="./DSC_0019.JPG"><img src="./DSC_0019.JPG" height="500"></a>
+<a href="./DSC_0020.JPG"><img src="./DSC_0020.JPG" height="500"></a>
+<a href="./DSC_0021.JPG"><img src="./DSC_0021.JPG" height="500"></a>
+<a href="./DSC_0022.JPG"><img src="./DSC_0022.JPG" height="500"></a>
+<a href="./DSC_0024.JPG"><img src="./DSC_0024.JPG" height="500"></a>
