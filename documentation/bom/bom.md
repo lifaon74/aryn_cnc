@@ -7,5 +7,5 @@
 | M3 washer | <a href="./m3_washer.jpg"><img src="./m3_washer.jpg" width="100" height="100"></a> | 
 | M3 T nut | <a href="./m3_T_nut.jpg"><img src="./m3_T_nut.jpg" width="100" height="100"></a> | 
 | | | 
-| M6 nut | <a href="./m3_screw.jpg"><img src="./m6_nut.jpg.jpg" width="100" height="100"></a> | 
+| M6 nut | <a href="./m6_nut.jpg"><img src="./m6_nut.jpg" width="100" height="100"></a> | 
 
