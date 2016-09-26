@@ -3,9 +3,9 @@
 ## BOM
 | Quantity | Name |
 | :---: | --- |
-| 2 | [Y carriage](#) | 
-| 2 | [Motor holder](#) | 
-| 4 | [Y frame fix](#) (2 mirrored) |
+| 2 | [Y carriage](#y-carriage-x-2) | 
+| 2 | [Motor holder](#motor-holder-x-2) | 
+| 4 | [Y frame fix](#frame-fix-x-4-2-mirrored) (2 mirrored) |
 | 4 | [Belt tensionner](#) |
 | 2 | [GT2 Belt](../bom/bom.md) ~80cm |
 | 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
