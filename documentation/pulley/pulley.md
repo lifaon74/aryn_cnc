@@ -23,7 +23,7 @@ The advantage: the belt can't rub.
 | 1 | [623ZZ bearing](../bom/bom.md) | 
 
 #### Print details
-* File: [belt_pulley.stl](../models/XYZ/motors_cariages/belt_pulley.stl)
+* File: [belt_pulley.stl](../../models/XYZ/motors_cariages/belt_pulley.stl)
 * Time: 5m
 * Layer height: 0.2mm
 * Weight: 1g

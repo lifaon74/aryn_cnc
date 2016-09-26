@@ -17,7 +17,7 @@
 | 18 | [M3 T nut](../bom/bom.md) | 
 
 #### Print details
-* File: [corner_3d_top.stl](../models/frame/corner_3d_top.stl)
+* File: [corner_3d_top.stl](../../models/frame/corner_3d_top.stl)
 * Time: 6h
 * Layer height: 0.2mm
 * Weight: 72g
@@ -34,7 +34,7 @@
 | 1 | [M6 nut](../bom/bom.md) | 
 
 #### Print details
-* File: [corner_3d_bot.stl](../models/frame/corner_3d_bot.stl)
+* File: [corner_3d_bot.stl](../../models/frame/corner_3d_bot.stl)
 * Time: 6h
 * Layer height: 0.2mm
 * Weight: 72g
@@ -50,7 +50,7 @@
 | 16 | [M3 T nut](../bom/bom.md) | 
 
 #### Print details
-* File: [corner_2d.stl](../models/frame/corner_2d.stl)
+* File: [corner_2d.stl](../../models/frame/corner_2d.stl)
 * Time: 3h
 * Layer height: 0.2mm
 * Weight: 48g

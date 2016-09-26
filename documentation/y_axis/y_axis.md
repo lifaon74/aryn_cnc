@@ -27,7 +27,7 @@
 | 8 | [M3 nut](../bom/bom.md) | 
 
 #### Print details
-* Files: [cariage_bot.stl](../models/XYZ/motors_cariages/cariage/cariage_bot.stl), [cariage_top.stl](../models/XYZ/motors_cariages/cariage/cariage_top.stl)
+* Files: [cariage_bot.stl](../../models/XYZ/motors_cariages/cariage/cariage_bot.stl), [cariage_top.stl](../../models/XYZ/motors_cariages/cariage/cariage_top.stl)
 * Time: 4h x 2
 * Layer height: 0.2mm
 * Weight: 50g x 2
@@ -59,7 +59,7 @@
 | 4 | [M3 self locking nut](../bom/bom.md) | 
 
 #### Print details
-* Files: [motor_block.stl](../models/XYZ/motors_cariages/motor_block/motor_block.stl), [motor_block_pulley_holder.stl](../models/XYZ/motors_cariages/motor_block/motor_block_pulley_holder.stl)
+* Files: [motor_block.stl](../../models/XYZ/motors_cariages/motor_block/motor_block.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_cariages/motor_block/motor_block_pulley_holder.stl)
 * Time: -
 * Layer height: 0.2mm
 * Weight: -
@@ -82,7 +82,7 @@
 | 2 | [M3 T nut](../bom/bom.md) |
 
 #### Print details
-* Files: [motor_block.stl](../models/XYZ/motors_cariages/rod_fix/rod_fix_bot.stl), [motor_block_pulley_holder.stl](../models/XYZ/motors_cariages/rod_fix/rod_fix_top.stl)
+* Files: [motor_block.stl](../../models/XYZ/motors_cariages/rod_fix/rod_fix_bot.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_cariages/rod_fix/rod_fix_top.stl)
 * Time: 1h30m + 30m
 * Layer height: 0.2mm
 * Weight: 26g
