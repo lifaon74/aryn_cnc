@@ -13,7 +13,7 @@ Full metal : stronger and more regular than type 2. I finally chosed this.
 
 ## Type 2
 The problem of this pulley : the print part is not totally perfect (a circle with maybe +-0.05mm) and result in little imperfections.
-The advantage : TODO - translate - la couroie ne peux pas frotter
+The advantage: the belt can't rub.
 
 ### BOM
 | Quantity | Name |
