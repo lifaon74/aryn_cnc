@@ -5,8 +5,10 @@
 | :---: | --- |
 | 2 | [Y carriage](#) | 
 | 2 | [Motor holder](#) | 
-| 4 | [Y frame fix](#) (2 mirrored)|
-| 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness)|
+| 4 | [Y frame fix](#) (2 mirrored) |
+| 4 | [Belt tensionner](#) |
+| 2 | [GT2 Belt](../bom/bom.md) ~80cm |
+| 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
 
 ### Y carriage x 2
 #### BOM
@@ -43,7 +45,7 @@
 | :---: | --- |
 | 1 | [Nema 17 motor](../bom/bom.md) | 
 | 1 | [GT2 pulley](../bom/bom.md) 20 teeth 5mm bore | 
-| 4 | [M3 screw](../bom/bom.md) 8~10mm | 
+| 4 | [M3 screw](../bom/bom.md) 8mm | 
 | 5 | [M3 screw](../bom/bom.md) 20mm |
 | 5 | [M3 nut](../bom/bom.md) |
 | 9 | [M3 washer](../bom/bom.md) | 
