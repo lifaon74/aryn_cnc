@@ -13,5 +13,8 @@
 | M6 nut | <a href="./m6_nut.jpg"><img src="./m6_nut.jpg" width="100" height="100"></a> | 
 | | | 
 | Extruded aluminum | <a href="./m6_nut.jpg"><img src="./extruded_aluminum.jpg" width="100" height="100"></a> | 
+| | | 
+| Nema 17 | <a href="./623ZZ_bearing.jpg"><img src="./623ZZ_bearing.jpg" width="100" height="100"></a> | 
+| Gt2 pulley (20 teeth 5mm bore)| <a href="./623ZZ_bearing.jpg"><img src="./623ZZ_bearing.jpg" width="100" height="100"></a> | 
 
 

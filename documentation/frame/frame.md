@@ -22,6 +22,7 @@
 * Layer height: 0.2mm
 * Weight: 72g
 * Support: Yes
+* Infill: 50%
  
 ### Bottom corners x 4
 #### BOM
@@ -38,14 +39,15 @@
 * Layer height: 0.2mm
 * Weight: 72g
 * Support: Yes
+* Infill: 50%
 
 ### Horizontal corners x 4
 #### BOM
 | Quantity | Name |
 | :---: | --- |
-| 14 | [M3 screw](../bom/bom.md) 8~10mm | 
-| 14 | [M3 washer](../bom/bom.md) | 
-| 14 | [M3 T nut](../bom/bom.md) | 
+| 16 | [M3 screw](../bom/bom.md) 8~10mm | 
+| 16 | [M3 washer](../bom/bom.md) | 
+| 16 | [M3 T nut](../bom/bom.md) | 
 
 #### Print details
 * File: [corner_2d.stl](../models/frame/corner_2d.stl)
@@ -53,9 +55,10 @@
 * Layer height: 0.2mm
 * Weight: 48g
 * Support: Yes
+* Infill: 50%
 
 ## Build steps
-When you'll cut the extruded aluminum bar, take care to be really precise else you could have some problem while building the frame.
+When you'll cut the extruded aluminum bar, take care to be really precise else you could have some problems while building the frame.
 
 <a href="./DSC_0014.JPG"><img src="./DSC_0014.JPG" height="500"></a>
 <a href="./DSC_0015.JPG"><img src="./DSC_0015.JPG" height="500"></a>
