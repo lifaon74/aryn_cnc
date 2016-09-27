@@ -12,8 +12,8 @@ The final should result in a low cost "professional" CNC tool able to work in 50
 * **important work volume** : 50cm x 50cm x 40cm (aprox) into a 70cm side cube (you should be able to put it in your car). It's a far better ratio than most of the 3D printer (ex: [Haeckel](http://reprap.org/wiki/Haeckel) 47cm x 47cm x 57cm size for a 20cm x 20cm x 35cm print volume)
 * **for makers** : if you have time, are handyman, own a 3D printer (or know someone) and like to trade with resellers (most of the parts are not available into generic DIY store, you'll need to order them online and/or contact peoples). Best part : you'll need a **shitload** of screws and nuts !
 
-## General Setups
-Prusa i3 improved with various parts (fan, anti wobble, etc...).
+## My Setups
+Prusa i3
 * 0.2mm layer height
 * 30% infill, 50% for some parts which need solidity
 * PLA (black, red, and maybe orange)
