@@ -5,12 +5,19 @@ The final should result in a low cost "professional" CNC tool able to work in 50
 
 <a href="./main.jpg"><img src="./main.jpg" height="500"></a>
 
-## The goals:
+## The goals
 * **modular** : easy to add, remove and update parts => it's for me the most important goal.
 * **professional** : fast, precise and strong, that's why I choosed to use only high quality materials. It increase the price, but he, we want the best no ?
-* **'low' cost** : far under the professional market (price estimated around 500$, expensive but not as much as a pro solution). I'm expexting same or better precision.
+* **'low' cost** : far under the professional market (price estimated around 500$, expensive but not as much as a pro solution). I'm expecting same or better precision.
 * **important work volume** : 50cm x 50cm x 40cm (aprox) into a 70cm side cube (you should be able to put it in your car). It's a far better ratio than most of the 3D printer (ex: [Haeckel](http://reprap.org/wiki/Haeckel) 47cm x 47cm x 57cm size for a 20cm x 20cm x 35cm print volume)
-* **for makers** : if you have time, are handyman, own a 3D printer (or know someone) and like to trade with resellers (most of the parts are not available into generic DIY store, you'll need to order them online and/or contact peoples). Best part : you'll need a **shitload** of screws and nuts !
+* **for makers** : if you have time, are handyman, own a 3D printer (or know someone) and like precision, this CNC is done for you.
+
+## Before your start
+* Take care to work as much precise as possible.
+* Most of the parts are not available into generic DIY store, you'll need to order them online and/or contact peoples.
+* You'll need a **shitload** of screws, nuts and washer : buy them into big pack (1000pcs) and keep them for future projects.
+* You'll need a complete set of tools.
+* Take care to have enough place (70cm side is big !).
 
 ## My Setups
 Prusa i3
@@ -22,7 +29,7 @@ Prusa i3
 1. [x] [Frame](./documentation/frame/frame.md)
 2. [ ] Axis
 	* [ ] [X](./documentation/x_axis/x_axis.md)
-	* [x] [Y](./documentation/y_axis/y_axis.md) - TODO Doc
+	* [x] [Y](./documentation/y_axis/y_axis.md)
 	* [x] [Z](./documentation/z_axis/z_axis.md) - TODO Doc
 
 

@@ -1,33 +1,39 @@
-# Y Axis
+# Z Axis
 
 ## BOM
 | Quantity | Name |
 | :---: | --- |
-| 2 | [Y carriage](#y-carriage-x-2) | 
-| 2 | [Motor holder](#motor-holder-x-2) | 
-| 4 | [Y frame fix](#frame-fix-x-4-2-mirrored) (2 mirrored) |
-| 4 | [Belt tensionner](#) |
-| 2 | [GT2 Belt](../bom/bom.md) ~80cm |
-| 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x 649mm (1.5mm thickness) |
+| 4 | [Z carriage](#) | 
+| 2 | [Motor holder](#) | 
+| 4 | [Z frame fix](#) (2 mirrored) |
+| 2 | [GT2 Belt](../bom/bom.md) loop 1524mm |
+| 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
 
-### Y carriage x 2
+### Z carriage x 4
 #### BOM
 ##### Bearings
 | Quantity | Name |
 | :---: | --- |
-| 8 | [M3 screw](../bom/bom.md) 16mm | 
-| 32 | [M3 washer](../bom/bom.md) | 
-| 8 | [M3 self locking nut](../bom/bom.md) | 
-| 8 | [623ZZ bearing](../bom/bom.md) | 
+| 4 | [M3 screw](../bom/bom.md) 16mm | 
+| 16 | [M3 washer](../bom/bom.md) | 
+| 4 | [M3 self locking nut](../bom/bom.md) | 
+| 4 | [623ZZ bearing](../bom/bom.md) | 
+
+##### Lead nut
+| Quantity | Name |
+| :---: | --- |
+| 4 | [M3 screw](../bom/bom.md) 16mm | 
+| 4 | [M3 nut](../bom/bom.md) | 
+| 1 | [Threaded rod lead nut](../bom/bom.md) | 
 
 ##### Fixing
 | Quantity | Name |
 | :---: | --- |
-| 8 | [M3 screw](../bom/bom.md) 16mm | 
-| 8 | [M3 nut](../bom/bom.md) | 
+| 4 | [M3 screw](../bom/bom.md) 16mm | 
+| 4 | [M3 nut](../bom/bom.md) | 
 
 #### Print details
-* Files: [cariage_bot.stl](../../models/XYZ/motors_cariages/cariage/cariage_bot.stl), [cariage_top.stl](../../models/XYZ/motors_cariages/cariage/cariage_top.stl)
+* Files: [cariage_z_back.stl](../../models/XYZ/Z/cariage/cariage_z_back.stl), [cariage_z_front.stl](../../models/XYZ/Z/cariage/cariage_z_front.stl)
 * Time: 4h x 2
 * Layer height: 0.2mm
 * Weight: 50g x 2
@@ -35,8 +41,9 @@
 * Infill: 50%
 
 #### Build steps
-<a href="./DSC_0011.JPG"><img src="./DSC_0011.JPG" height="500"></a>
-<a href="./DSC_0009.JPG"><img src="./DSC_0009.JPG" height="500"></a>
+<a href="./DSC_0041.JPG"><img src="./DSC_0041.JPG" height="500"></a>
+<a href="./DSC_0042.JPG"><img src="./DSC_0042.JPG" height="500"></a>
+<a href="./DSC_0043.JPG"><img src="./DSC_0043.JPG" height="500"></a>
 
 ### Motor holder x 2
 #### BOM

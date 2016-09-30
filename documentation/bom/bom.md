@@ -4,6 +4,7 @@
 | :---: | --- |
 | M3 screw | <a href="./m3_screw.jpg"><img src="./m3_screw.jpg" width="100" height="100"></a> | 
 | M3 washer | <a href="./m3_washer.jpg"><img src="./m3_washer.jpg" width="100" height="100"></a> | 
+| M3 washer large | <a href="./m3_washer_large.png"><img src="./m3_washer_large.png" width="100" height="100"></a> | 
 | M3 nut | <a href="./m3_nut.jpg"><img src="./m3_nut.jpg" width="100" height="100"></a> | 
 | M3 T nut | <a href="./m3_T_nut.jpg"><img src="./m3_T_nut.jpg" width="100" height="100"></a> | 
 | M3 self locking nut | <a href="./m3_self_locking_nut.jpg"><img src="./m3_self_locking_nut.jpg" width="100" height="100"></a> | 
@@ -22,7 +23,7 @@
 | GT2 Belt | <a href="./gt2_belt.jpg"><img src="./gt2_belt.jpg" width="100" height="100"></a> | 
 | GT2 Belt 1524mm | <a href="./gt2_belt_1524.jpg"><img src="./gt2_belt_1524.jpg" width="100" height="100"></a> | 
 | | |
-| Threaded rod (THSL-600-8D) + Lead Screw 8mm | <a href="./lead_screw.jpg"><img src="./lead_screw.jpg" width="100" height="100"></a> |
+| Threaded rod (THSL-600-8D) + Lead Nut 8mm | <a href="./lead_screw.jpg"><img src="./lead_screw.jpg" width="100" height="100"></a> |
 | | |
 | Switch (SS-5GL) | <a href="./SS_5GL.jpg"><img src="./SS_5GL.jpg" width="100" height="100"></a> | 
 

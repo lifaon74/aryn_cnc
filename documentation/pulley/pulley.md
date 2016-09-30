@@ -6,7 +6,7 @@ Full metal : stronger and more regular than type 2. I finally chosed this.
 | Quantity | Name |
 | :---: | --- |
 | 2 | [M3 washer](../bom/bom.md) | 
-| 2 | M3/M4 washer 14mm| 
+| 2 | [M3/M4 washer 14mm](../bom/bom.md) | 
 | 2 | [623ZZ bearing](../bom/bom.md) | 
 
 <a href="./DSC_0003.JPG"><img src="./DSC_0003.JPG" height="500"></a>
