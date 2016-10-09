@@ -6,7 +6,7 @@ show_screws     = true;
 show_bearings   = true;
 show_rods       = true;
 
-rod_x = 20.4; // sqrt(2) * rod_side
+rod_x = 20.4; // sqrt(2) * rod_side => smaller value for smaller part
 
 base_bearing_holder_z = 2;
 screw_virtual_holder_side_smaller = 8;
@@ -26,6 +26,8 @@ lead_screw_height = 11; // 10
 lead_screw_fix_screw_diameter = 16.2;
 lead_screw_fix_screw_pos = (lead_screw_fix_screw_diameter / 2) / sqrt(2);
 
+echo("base_x", base_x);
+echo("base_y", base_y);
 echo("base_z", base_z);
  
 /*
@@ -151,7 +153,7 @@ module base_screw_remove_fixation(pos_x, pos_y, pos_z) {
 	
 	
 	translate([fixation_offset_x * pos_x, fixation_offset_y * pos_y, fixation_offset_z * pos_z])
-	color([1, 0, 0, 0.7])
+	color([1, 0, 1, 0.7])
 	
 	union() {
 		

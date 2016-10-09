@@ -35,6 +35,11 @@ rail_z = 2;
 
 rail_y_margin = 0.5;
 
+
+motor_pulley_holder_part_space = 6;
+motor_pulley_holder_part_butt_tickness = 4;
+
+
 module screw_and_head(screw_height) {
 	screw_head_diameter = 8;
 	
@@ -206,9 +211,6 @@ module motor_pulley_holder_top() {
 //motor_pulley_holder_top
 
 
-motor_pulley_holder_part_space = 6;
-motor_pulley_holder_part_butt_tickness = 4;
-
 module motor_pulley_holder_part() {
 	
 	
@@ -250,6 +252,31 @@ module motor_pulley_holder_part() {
 }
 
 //motor_pulley_holder_part
+
+
+module motor_gearbox_adapter() {
+	
+	motor_gearbox_hole_diamater = 36.5;
+	motor_gearbox_adapter_side = motor_side - 1;
+	motor_gearbox_adapter_z = 22.6;
+	
+	color([1, 1, 0])
+	
+	difference() {
+			
+		cube([motor_gearbox_adapter_side, motor_gearbox_adapter_side, motor_gearbox_adapter_z], center=true); // base
+		
+		union() {
+			
+			cylinder (r=(motor_gearbox_hole_diamater / 2), h=50 , center=true, $fn = 100);
+			
+			motor_remove();
+		}
+	}
+	
+}
+//motor_gearbox_adapter
+motor_gearbox_adapter();
 
 
 
@@ -323,10 +350,10 @@ module _render() {
 	
 }
 
-_render();
+//_render();
 //motor_pulley_holder_top();
 //motor_pulley_holder_part();
-
+motor_gearbox_adapter();
 
 
 
