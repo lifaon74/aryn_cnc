@@ -7,7 +7,7 @@
 | M3 washer large | <a href="./m3_washer_large.png"><img src="./m3_washer_large.png" width="100" height="100"></a> | 
 | M3 nut | <a href="./m3_nut.jpg"><img src="./m3_nut.jpg" width="100" height="100"></a> | 
 | M3 T nut | <a href="./m3_T_nut.jpg"><img src="./m3_T_nut.jpg" width="100" height="100"></a> | 
-| M3 butterfly nut | <a href="./m3_butterfly_nut.jpg.jpg"><img src="./m3_butterfly_nut.jpg.jpg" width="100" height="100"></a> | 
+| M3 butterfly nut | <a href="./m3_butterfly_nut.jpg"><img src="./m3_butterfly_nut.jpg" width="100" height="100"></a> | 
 | M3 self locking nut | <a href="./m3_self_locking_nut.jpg"><img src="./m3_self_locking_nut.jpg" width="100" height="100"></a> | 
 | | | 
 | 623ZZ bearing | <a href="./623ZZ_bearing.jpg"><img src="./623ZZ_bearing.jpg" width="100" height="100"></a> | 
