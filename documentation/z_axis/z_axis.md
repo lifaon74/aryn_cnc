@@ -105,7 +105,7 @@ TODO : add photo of nema 17 + gearbox
 
 #### Print details
 * File: [motor_block_pulley_holder_bot.stl](../../models/XYZ/Z/motor_block/motor_block_pulley_holder_bot.stl), [motor_block_pulley_holder_top.stl](../../models/XYZ/Z/motor_block/motor_block_pulley_holder_top.stl), [pulley_holder.stl](../../models/XYZ/Z/motor_block/pulley_holder.stl)
-* Time: 40m + 40m + 5m
+* Time: 40min + 40min + 5min
 * Layer height: 0.2mm
 * Weight: 7g + 7g + 1g
 * Support: No
@@ -145,28 +145,6 @@ Take time to adjust the space beetween this part and the motor bloc. Maybe you'l
 <a href="./DSC_0027.JPG"><img src="./DSC_0027.JPG" height="500"></a>
 <a href="./DSC_0029.JPG"><img src="./DSC_0029.JPG" height="500"></a>
 
-### Belt tensionner x 4
-#### BOM
-| Quantity | Name |
-| :---: | --- |
-| 2 | [M2 screw](../bom/bom.md) 6~8mm | 
-| 1 | [M2 screw](../bom/bom.md) 25~30mm |
-| 1 | [M2 washer](../bom/bom.md) |
-| 3 | [M2 nut](../bom/bom.md) |
-
-#### Print details
-* Files: [belt_holder_bot.stl](../../models/XYZ/motors_cariages/belt_holder/belt_holder_bot.stl), [belt_holder_top.stl](../../models/XYZ/motors_cariages/belt_holder/belt_holder_top.stl)
-* Time: 10m
-* Layer height: 0.2mm
-* Weight: 2g
-* Support: No
-
-#### Build steps
-Take care to have exactly the same length (number of teeth) for both of the belts.
-
-<a href="./DSC_0030.JPG"><img src="./DSC_0030.JPG" height="500"></a>
-<a href="./DSC_0031.JPG"><img src="./DSC_0031.JPG" height="500"></a>
-<a href="./DSC_0032.JPG"><img src="./DSC_0032.JPG" height="500"></a>
 
 ## Final
 <a href="./DSC_00011.JPG"><img src="./DSC_00011.JPG" height="500"></a>
