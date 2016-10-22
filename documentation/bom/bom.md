@@ -28,5 +28,7 @@
 | Threaded rod (THSL-600-8D) + Lead Nut 8mm | <a href="./lead_screw.jpg"><img src="./lead_screw.jpg" width="100" height="100"></a> |
 | | |
 | Switch (SS-5GL) | <a href="./SS_5GL.jpg"><img src="./SS_5GL.jpg" width="100" height="100"></a> | 
+| | |
+| Male power socket IEC320  | <a href="./male_power_socket_iec320.jpg"><img src="./male_power_socket_iec320.jpg" width="100" height="100"></a> | 
 
 

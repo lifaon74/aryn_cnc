@@ -49,7 +49,7 @@
 ### Motor holder x 2
 #### BOM
 ##### Motor
-###### High torque (recommended)
+###### High torque (recommended, can lift ~16kg)
 | Quantity | Name |
 | :---: | --- |
 | 1 | [Nema 17 with gearbox](../bom/bom.md) | 
@@ -57,7 +57,7 @@
 | 4 | [M3 screw](../bom/bom.md) 35mm | 
 | 4 | [M3 washer](../bom/bom.md) | 
 
-###### Low torque (alternative)
+###### Low torque (alternative, can lift ~4kg)
 | Quantity | Name |
 | :---: | --- |
 | 1 | [Nema 17](../bom/bom.md) | 
