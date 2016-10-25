@@ -112,10 +112,85 @@ module power_socket() {
 }
 // power_socket
 
+washer_diameter = 8;
+screw_m3_diameter = 3;
+screw_m4_diameter = 4;
+
+power_supply_x = 114;
+power_supply_y = 215;
+power_supply_z = 50;
+
+power_supply_hole_z_offset = 12;
+power_supply_screw_z_margin = 3;
+
+power_supply_base_x = power_supply_x + (material_thickness * 2);
+power_supply_base_y = 16;
+power_supply_base_z = material_thickness + power_supply_screw_z_margin + (power_supply_hole_z_offset * 2);
+
+power_supply_base_z_offset = (power_supply_base_z / 2) - material_thickness - power_supply_screw_z_margin;
 
 
-power_socket();
+module screw_m4() {
+	screw_height = 50;
+	cylinder (r=(screw_m4_diameter / 2), h=screw_height , center=true);
+	cylinder (r=((screw_m4_diameter + 1) / 2), h=2 , center=true);
+}
+// screw_m4
 
+module power_supply_piece_fix_holes() {
+	translate([(power_supply_base_x / 2), 0, power_supply_hole_z_offset])
+	rotate([0, 90, 0])
+	screw_m4();
+	
+	translate([-(power_supply_base_x / 2), 0, power_supply_hole_z_offset])
+	rotate([0, 90, 0])
+	screw_m4();
+}
+// power_supply_piece_fix_holes
+
+
+module power_supply_piece_fix_rod() {
+	power_supply_piece_fix_rod_z = 20;
+	
+	union() {
+		cube([(power_supply_x - washer_diameter), screw_m3_diameter, power_supply_piece_fix_rod_z], center = true);
+		
+		cube([power_supply_x, washer_diameter, (power_supply_screw_z_margin * 2)], center = true);
+	}
+}
+// power_supply_piece_fix_rod
+
+module power_supply_piece() {
+	
+	color([0.5, 0.5, 0.5])
+	translate([0, 0, (power_supply_z / 2)])
+	cube([power_supply_x, power_supply_y, power_supply_z], center = true);
+}
+// power_socket_piece
+
+
+module power_supply_base() {
+	
+	color([0.7, 0.7, 0])
+	translate([0, 0, power_supply_base_z_offset])
+	cube([power_supply_base_x, power_supply_base_y, power_supply_base_z], center = true);
+}
+//power_supply_base
+
+module power_supply() {
+	difference() {
+		power_supply_base();
+		
+		power_supply_piece();
+		power_supply_piece_fix_holes();
+		power_supply_piece_fix_rod();
+	}
+}
+// power_supply
+
+
+//power_socket();
+power_supply();
 
 
 
