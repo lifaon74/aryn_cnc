@@ -45,6 +45,8 @@ belt_step_radius = belt_step_space / 4;
 echo("base_x", base_x);
 echo("base_y", base_y);
 echo("base_bottom_z", base_bottom_z);
+echo("base_top_z", base_top_z);
+echo("total_z", base_bottom_z + base_top_z + 1);
 
 module screw(
 	screw_diameter, screw_height,
@@ -90,9 +92,12 @@ module positioned_screw_m2(pos_x) {
 // positioned_screw_m2
 
 module positioned_screw_m3() {
+	positioned_screw_m3_offset_z = -(screw_m3_nut_diameter / 2) - screw_material_thickness;
+	
 	translate([0, (screw_m3_height / 2) + (base_y / 2) - screw_material_thickness_stronger, -(screw_m3_nut_diameter / 2) - screw_material_thickness])
 	rotate([-90, 30, 0])
 	screw_m3();
+	echo("positioned_screw_m3_offset_z", positioned_screw_m3_offset_z);
 }
 // positioned_screw_m3
 
@@ -132,7 +137,7 @@ module _render_bottom() {
 	difference() {
 		union() {
 			base_bottom();
-			positioned_belt_step();
+//			positioned_belt_step();
 		}
 		
 		union() {
@@ -147,7 +152,11 @@ module _render_bottom() {
 module _render_top() {
 	color([1, 1, 0, 0.7])
 	difference() {
-		base_top();
+		union() {
+			base_top();
+			translate([0, 0, 2])
+			positioned_belt_step();
+		}
 		
 		union() {
 			positioned_screw_m2(1);
@@ -157,8 +166,8 @@ module _render_top() {
 }
 // _render_top
 
-_render_top();
-//_render_bottom();
+//_render_top();
+_render_bottom();
 
 
 

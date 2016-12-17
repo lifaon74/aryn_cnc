@@ -28,7 +28,7 @@ screw_nuts_height = 3; // default is 2.4mm
 screws_material_holder_min_size = 3; // the minimum of material arround a screw
 screws_attach_length = 10; // the min length of the screew which will attach the 2 pieces
 
-rod_holder_size = 10; // the length of material which will tighten the cariage rods
+rod_holder_size = 10; // the length of material which will tighten the cariage rods => 10 for Y, 7 for X
 
 rod_piece_spacing = 1; // space between rod and piece
    

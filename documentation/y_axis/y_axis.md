@@ -27,7 +27,7 @@
 | 8 | [M3 nut](../bom/bom.md) | 
 
 #### Print details
-* Files: [cariage_bot.stl](../../models/XYZ/motors_cariages/cariage/cariage_bot.stl), [cariage_top.stl](../../models/XYZ/motors_cariages/cariage/cariage_top.stl)
+* Files: [cariage_bot_y.stl](../../models/XYZ/motors_cariages/cariage/cariage_bot_y.stl), [cariage_top_y.stl](../../models/XYZ/motors_cariages/cariage/cariage_top_y.stl)
 * Time: 4h x 2
 * Layer height: 0.2mm
 * Weight: 50g x 2
@@ -103,7 +103,7 @@
 | 3 | [M2 nut](../bom/bom.md) |
 
 #### Print details
-* Files: [belt_holder_bot.stl](../../models/XYZ/motors_cariages/belt_holder/belt_holder_bot.stl), [belt_holder_top.stl](../../models/XYZ/motors_cariages/belt_holder/belt_holder_top.stl)
+* Files: [belt_tensioner_bot_grip.stl](../../models/XYZ/motors_cariages/belt_tensioner/belt_tensioner_bot_grip.stl), [belt_tensioner_top.stl](../../models/XYZ/motors_cariages/belt_tensioner/belt_tensioner_top.stl)
 * Time: 10m
 * Layer height: 0.2mm
 * Weight: 2g

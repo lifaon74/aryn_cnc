@@ -114,7 +114,7 @@ module positioned_switch() {
 	switch();
 }
 // positioned_switch
-
+positioned_switch();
 
 
 module base_block_separator() {
@@ -222,7 +222,7 @@ module base_block_full() {
 // base_block_full
 
 module _render() {
-	intersection() { // difference, intersection
+	difference() { // difference, intersection
 		base_block_full();
 		base_block_spliter();
 	}

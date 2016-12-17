@@ -18,6 +18,9 @@ bearing_pos = (bearing_outer_diameter + rod_side) / (2 * sqrt(2));
 
 
 
+echo("base_block_pos_y", base_block_pos_y);
+
+
 
 /*
     RODS

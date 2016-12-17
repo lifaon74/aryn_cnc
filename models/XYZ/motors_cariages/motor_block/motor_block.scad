@@ -198,6 +198,7 @@ module _render(piece_to_render) {
 
 // 'all' | 'base' | bearing_holder
 //_render("bearing_holder");
+motor();
 _render("base");
 
 
