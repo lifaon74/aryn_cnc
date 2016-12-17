@@ -30,11 +30,14 @@ Prusa i3
 2. [ ] Axis
 	* [ ] [X](./documentation/x_axis/x_axis.md)
 	* [x] [Y](./documentation/y_axis/y_axis.md)
-	* [x] [Z](./documentation/z_axis/z_axis.md) - TODO Doc
+	* [x] [Z](./documentation/z_axis/z_axis.md) - In progress
 
 
 
 **The project is still in progress, some parts may change and it's not my full time job (don't expect it will be finished too fast). This git is here to share my work. Fell free to test, contribute, improve or comment (create issues for that).**
+
+If you want to support the project: 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2ALTQGLD896DQ)
 
 <img src="http://counter9.01counter.com/private/freecounterstat.php?c=9174140203a896ce51aff6a225bbc8cf" border="0" title="hit counter" alt="hit counter">
 
