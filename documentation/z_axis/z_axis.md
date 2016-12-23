@@ -8,7 +8,6 @@
 | 2 | [Belt tensioner](#) | 
 | 4 | [Z frame fix](#) (2 mirrored) |
 | 2 | [GT2 Belt](../bom/bom.md) loop 1524mm |
-| 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
 
 ### Z carriage x 4
 #### BOM
@@ -121,31 +120,42 @@ Take time to adjust the space beetween this part and the motor bloc. Maybe you'l
 <a href="./DSC_0011.JPG"><img src="./DSC_0011.JPG" height="500"></a>
 <a href="./DSC_0046.JPG"><img src="./DSC_0046.JPG" height="500"></a>
 
-// continue here
 
-### Frame fix x 4 (2 mirrored)
+### Frame fix x 8 (4 mirrored)
+
 #### BOM
+##### For a pair of fixations (top and bottom)
 | Quantity | Name |
 | :---: | --- |
-| 2 | [M3 screw](../bom/bom.md) 8~10mm | 
-| 2 | [M3 screw](../bom/bom.md) 16mm |
-| 2 | [M3 washer](../bom/bom.md) |
-| 2 | [M3 nut](../bom/bom.md) |
-| 2 | [M3 T nut](../bom/bom.md) |
+| 1 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
+| 1 | [Threaded rod](../bom/bom.md) 8mm x 58mm |
+
+#### BOM
+##### For individual fixation
+| Quantity | Name |
+| :---: | --- |
+| 4 | [M3 screw](../bom/bom.md) 8~10mm |
+| 3 | [M3 screw](../bom/bom.md) 16mm |
+| 4 | [M3 washer](../bom/bom.md) |
+| 3 | [M3 nut](../bom/bom.md) |
+| 4 | [M3 T nut](../bom/bom.md) |
+| 1 | [608ZZ bearing](../bom/bom.md) |
+| 1 | [Thrust bearing 8mm](../bom/bom.md) |
+| 1 | [GT2 pulley (20 teeth 8mm bore)](../bom/bom.md) |
 
 #### Print details
-* Files: [motor_block.stl](../../models/XYZ/motors_cariages/rod_fix/rod_fix_bot.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_cariages/rod_fix/rod_fix_top.stl)
-* Time: 1h30m + 30m
+* Files: [rod_fix_z_bot.stl](../../models/XYZ/Z/rod_fix_z/rod_fix_z_bot.stl), [rod_fix_z_top.stl](../../models/XYZ/Z/rod_fix_z/rod_fix_z_top.stl)
+* Time: // TODO
 * Layer height: 0.2mm
-* Weight: 26g
-* Support: No
+* Weight: // TODO
+* Support: Yes
 
 #### Build steps
-<a href="./DSC_0026.JPG"><img src="./DSC_0026.JPG" height="500"></a>
-<a href="./DSC_0027.JPG"><img src="./DSC_0027.JPG" height="500"></a>
-<a href="./DSC_0029.JPG"><img src="./DSC_0029.JPG" height="500"></a>
+<a href="./DSC_0038.JPG"><img src="./DSC_0038.JPG" height="500"></a>
+<a href="./DSC_0039.JPG"><img src="./DSC_0039.JPG" height="500"></a>
+<a href="./DSC_0040.JPG"><img src="./DSC_0040.JPG" height="500"></a>
 
+The top is the same as the bottom (thrust bearing and GT2 pulley) except that the belt goes only on the bottom.
+It's not visible on the pictures.
+The purpose is to limit the movements of the rod on the Z axis.
 
-## Final
-<a href="./DSC_00011.JPG"><img src="./DSC_00011.JPG" height="500"></a>
-<a href="./DSC_0002.JPG"><img src="./DSC_0002.JPG" height="500"></a>
