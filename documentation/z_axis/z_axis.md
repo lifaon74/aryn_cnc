@@ -149,6 +149,7 @@ Take time to adjust the space beetween this part and the motor bloc. Maybe you'l
 * Layer height: 0.2mm
 * Weight: 32g
 * Support: No
+* Infill: 50%
 
 #### Build steps
 <a href="./DSC_0038.JPG"><img src="./DSC_0038.JPG" height="500"></a>
