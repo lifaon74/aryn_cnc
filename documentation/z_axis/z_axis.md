@@ -129,12 +129,12 @@ Take time to adjust the space beetween this part and the motor bloc. Maybe you'l
 | Quantity | Name |
 | :---: | --- |
 | 1 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
-| 1 | [Threaded rod](../bom/bom.md) 8mm x 58mm |
+| 1 | [Threaded rod](../bom/bom.md) 8mm x 580mm |
 
 ##### For individual fixation
 | Quantity | Name |
 | :---: | --- |
-| 4 | [M3 screw](../bom/bom.md) 8~10mm |
+| 4 | [M3 screw](../bom/bom.md) 8~10mm or 35mm |
 | 3 | [M3 screw](../bom/bom.md) 16mm |
 | 4 | [M3 washer](../bom/bom.md) |
 | 3 | [M3 nut](../bom/bom.md) |
@@ -153,8 +153,8 @@ Take time to adjust the space beetween this part and the motor bloc. Maybe you'l
 
 #### Build steps
 <a href="./DSC_0038.JPG"><img src="./DSC_0038.JPG" height="500"></a>
-<a href="./DSC_0039.JPG"><img src="./DSC_0039.JPG" height="500"></a>
 <a href="./DSC_0040.JPG"><img src="./DSC_0040.JPG" height="500"></a>
+<a href="./DSC_0039.JPG"><img src="./DSC_0039.JPG" height="500"></a>
 
 ##### Infos
 * The top is the same as the bottom (thrust bearing and GT2 pulley) except that the belt goes only on the bottom.
