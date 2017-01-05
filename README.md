@@ -3,7 +3,7 @@
 Aryn CNC is a personal project of building a CNC machine for 3D printing, carving, or PCB drilling.
 The final should result in a low cost "professional" CNC tool able to work in 50cm x 50cm x 40cm volume (X, Y, Z).
 
-<a href="./main.jpg"><img src="./main.jpg" height="500"></a>
+<!---<a href="./main.jpg"><img src="./main.jpg" height="500"></a>-->
 [![Aryn CNC 01](http://img.youtube.com/vi/Y5BFLhbk83g/0.jpg)](http://www.youtube.com/watch?v=Y5BFLhbk83g "Aryn CNC 01")
 
 ## The goals
