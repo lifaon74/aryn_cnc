@@ -6,7 +6,7 @@
 | 4 | [Z carriage](#) | 
 | 2 | [Motor holder](#) | 
 | 2 | [Belt tensioner](#) | 
-| 4 | [Z frame fix](#) (2 mirrored) |
+| 8 | [Z frame fix](#) (4 mirrored) |
 | 2 | [GT2 Belt](../bom/bom.md) loop 1524mm |
 
 ### Z carriage x 4
@@ -87,8 +87,9 @@
 * Support: No
 
 #### Build steps
+<a href="./DSC_0035_2.JPG"><img src="./DSC_0035_2.JPG" height="500"></a>
 <a href="./DSC_0044.JPG"><img src="./DSC_0044.JPG" height="500"></a>
-TODO : add photo of nema 17 + gearbox
+
 
 ### Belt tensioner x 2
 #### BOM
@@ -130,7 +131,6 @@ Take time to adjust the space beetween this part and the motor bloc. Maybe you'l
 | 1 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
 | 1 | [Threaded rod](../bom/bom.md) 8mm x 58mm |
 
-#### BOM
 ##### For individual fixation
 | Quantity | Name |
 | :---: | --- |
@@ -145,17 +145,17 @@ Take time to adjust the space beetween this part and the motor bloc. Maybe you'l
 
 #### Print details
 * Files: [rod_fix_z_bot.stl](../../models/XYZ/Z/rod_fix_z/rod_fix_z_bot.stl), [rod_fix_z_top.stl](../../models/XYZ/Z/rod_fix_z/rod_fix_z_top.stl)
-* Time: // TODO
+* Time: 1h30 + 40m
 * Layer height: 0.2mm
-* Weight: // TODO
-* Support: Yes
+* Weight: 32g
+* Support: No
 
 #### Build steps
 <a href="./DSC_0038.JPG"><img src="./DSC_0038.JPG" height="500"></a>
 <a href="./DSC_0039.JPG"><img src="./DSC_0039.JPG" height="500"></a>
 <a href="./DSC_0040.JPG"><img src="./DSC_0040.JPG" height="500"></a>
 
-The top is the same as the bottom (thrust bearing and GT2 pulley) except that the belt goes only on the bottom.
-It's not visible on the pictures.
-The purpose is to limit the movements of the rod on the Z axis.
+##### Infos
+* The top is the same as the bottom (thrust bearing and GT2 pulley) except that the belt goes only on the bottom.
+* It's not visible on the pictures, but there's too a GT2 pulley on the top. The purpose is to limit the movements of the rod on the Z axis.
 

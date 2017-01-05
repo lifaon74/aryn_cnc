@@ -11,7 +11,7 @@
 | M3 self locking nut | <a href="./m3_self_locking_nut.jpg"><img src="./m3_self_locking_nut.jpg" width="100" height="100"></a> | 
 | | | 
 | 623ZZ bearing | <a href="./623ZZ_bearing.jpg"><img src="./623ZZ_bearing.jpg" width="100" height="100"></a> |
-| 608ZZ bearing | TODO <a href="./608ZZ_bearing.jpg"><img src="./608ZZ_bearing.jpg" width="100" height="100"></a> |
+| 608ZZ bearing | <a href="./608ZZ_bearing.jpg"><img src="./608ZZ_bearing.jpg" width="100" height="100"></a> |
 | Thrust bearing 8mm | <a href="./thrust_bearing_8mm.jpg"><img src="./thrust_bearing_8mm.jpg" width="100" height="100"></a> | 
 | | |
 | M6 nut | <a href="./m6_nut.jpg"><img src="./m6_nut.jpg" width="100" height="100"></a> | 

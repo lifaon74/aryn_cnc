@@ -27,10 +27,10 @@ Prusa i3
 
 ## Table of Content
 1. [x] [Frame](./documentation/frame/frame.md)
-2. [ ] Axis
-	* [ ] [X](./documentation/x_axis/x_axis.md)
+2. [x] Axis
+	* [x] [X](./documentation/x_axis/x_axis.md) - Doc in progress
 	* [x] [Y](./documentation/y_axis/y_axis.md)
-	* [x] [Z](./documentation/z_axis/z_axis.md) - In progress
+	* [x] [Z](./documentation/z_axis/z_axis.md)
 
 
 
