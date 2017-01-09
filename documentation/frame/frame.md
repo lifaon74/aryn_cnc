@@ -5,10 +5,11 @@
 | :---: | --- |
 | 4 | [Top corner](#top-corners-x-4) | 
 | 4 | [Bottom corner](#bottom-corners-x-4) | 
+| 4 | [Foot](#foot-x-4) (optional) |
 | 4 | [Horizontal corner](#horizontal-corners-x-4) |
 | 12 | [Extruded aluminum](../bom/bom.md) 20mm x 20mm x 650mm |
 
-### Top corners x 4
+### Top corner x 4
 #### BOM
 | Quantity | Name |
 | :---: | --- |
@@ -24,7 +25,7 @@
 * Support: Yes
 * Infill: 50%
  
-### Bottom corners x 4
+### Bottom corner x 4
 #### BOM
 | Quantity | Name |
 | :---: | --- |
@@ -41,7 +42,22 @@
 * Support: Yes
 * Infill: 50%
 
-### Horizontal corners x 4
+### Foot x 4
+#### BOM
+| Quantity | Name |
+| :---: | --- |
+| 1 | [M6 screw](../bom/bom.md) |
+| 1 | [M6 nut](../bom/bom.md) |
+
+#### Print details
+* File: [foot.stl](../../models/frame/foot.stl)
+* Time: - TODO
+* Layer height: 0.2mm
+* Weight: - TODO
+* Support: NO
+* Infill: 50%
+
+### Horizontal corner x 4
 #### BOM
 | Quantity | Name |
 | :---: | --- |

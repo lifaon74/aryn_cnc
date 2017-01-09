@@ -16,8 +16,8 @@ base_top_z = 7;
 belt_space = 3;
 
 
-cariage_block_offset_x = 0; // comment/uncomment to adjust preview
-//	cariage_block_offset_x = cariage_block_x / 2;
+carriage_block_offset_x = 0; // comment/uncomment to adjust preview
+//	carriage_block_offset_x = carriage_block_x / 2;
 
 
 /**
@@ -39,7 +39,7 @@ belt_holder_case_y_offset = (belt_holder_case_block_y - belt_holder_case_y) / 2 
 base_top_x = belt_holder_case_block_x;
 base_top_block_z_offset = (base_block_z / 2) + (base_top_z / 2);
 	
-cariage_block_x = (rod_side * sqrt(2)) + (screw_virtual_holder_side * 2);
+carriage_block_x = (rod_side * sqrt(2)) + (screw_virtual_holder_side * 2);
 	
 base_fix_block_z_offset = (base_block_z / 2) + (base_top_z / 2);
 
@@ -57,12 +57,12 @@ belt_remove_part2_z_offset = (rod_remove_side / 2) + belt_holder_wall_thickness_
 
 
 
-module cariage_block() {
+module carriage_block() {
 	
 	
 	color([0, 0, 0, 0.7])
-	translate([-cariage_block_offset_x, base_block_y_offset, 0])
-	cube([cariage_block_x, base_block_y, base_block_z], center = true);
+	translate([-carriage_block_offset_x, base_block_y_offset, 0])
+	cube([carriage_block_x, base_block_y, base_block_z], center = true);
 	echo("piece x :", base_block_x);
 	echo("piece y :", base_block_y);
 	echo("piece z :", base_block_z);
@@ -70,13 +70,13 @@ module cariage_block() {
 	
 	rod(true);
 }
-// cariage_block
+// carriage_block
 
-module cariage_block_fix_screw(pos_x, pos_y) {
+module carriage_block_fix_screw(pos_x, pos_y) {
 	fixation_offset_x = 5;
 	fixation_offset_y = 12;
 	
-	x_offset = (cariage_block_x / 2) - fixation_offset_x;
+	x_offset = (carriage_block_x / 2) - fixation_offset_x;
 	y_offset = (base_block_y / 2) - fixation_offset_y;
 	
 	screw_wacher_diameter = 8;
@@ -90,16 +90,16 @@ module cariage_block_fix_screw(pos_x, pos_y) {
 		cylinder (r=(screw_wacher_diameter / 2), h=(screw_wacher_z * 2) , center=true);
 	}
 }
-//cariage_block_fix_screw 
+//carriage_block_fix_screw
 
 
-module cariage_block_fix() {
-	cariage_block_fix_screw(+1, +1);
-	cariage_block_fix_screw(-1, +1);
-	cariage_block_fix_screw(+1, -1);
-	cariage_block_fix_screw(-1, -1);
+module carriage_block_fix() {
+	carriage_block_fix_screw(+1, +1);
+	carriage_block_fix_screw(-1, +1);
+	carriage_block_fix_screw(+1, -1);
+	carriage_block_fix_screw(-1, -1);
 }
-//cariage_block_fix
+//carriage_block_fix
 
 
 
@@ -185,7 +185,7 @@ module base_fix_switch() {
 
 
 module base_fix_nuts_insert() {
-	base_fix_nuts_insert_x_offset = (cariage_block_x / 2) - 6;
+	base_fix_nuts_insert_x_offset = (carriage_block_x / 2) - 6;
 	
 	color([1, 0, 0, 0.7])
 	translate([0, base_block_y_offset, base_fix_block_z_offset])
@@ -242,7 +242,7 @@ module base_fix_block_remove_lighter() {
 
 module base_fix_block() {
 	translate([0, base_block_y_offset, base_fix_block_z_offset])
-	cube([cariage_block_x, base_block_y, base_top_z], center = true);
+	cube([carriage_block_x, base_block_y, base_top_z], center = true);
 }
 // base_fix_block
 
@@ -266,17 +266,17 @@ module render_fix_block() {
 		base_fix_switch();
 		base_fix_nuts_insert();
 		
-		translate([(50 / 2) + (cariage_block_x / 2 )- 6 - 5, 0, 0])
+		translate([(50 / 2) + (carriage_block_x / 2 )- 6 - 5, 0, 0])
 		screws_remove();
 		
-		cariage_block_fix();
+		carriage_block_fix();
 		base_fix_block_remove_lighter();
 	}
 }
 // render_fix_block
 
-//cariage_block();
-//cariage_block_fix();
+//carriage_block();
+//carriage_block_fix();
 
 //render_belt_holder();
 render_fix_block();

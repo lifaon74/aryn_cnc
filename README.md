@@ -8,7 +8,7 @@ The final should result in a low cost "professional" CNC tool able to work in 50
 
 ## The goals
 * **modular** : easy to add, remove and update parts => it's for me the most important goal.
-* **professional** : fast, precise and strong, that's why I choosed to use only high quality materials. It increase the price, but he, we want the best no ?
+* **professional** : fast, precise and strong, that's why I chose to use only high quality materials. It increase the price, but he, we want the best no ?
 * **'low' cost** : far under the professional market (price estimated around 500$, expensive but not as much as a pro solution). I'm expecting same or better precision.
 * **important work volume** : 50cm x 50cm x 40cm (aprox) into a 70cm side cube (you should be able to put it in your car). It's a far better ratio than most of the 3D printer (ex: [Haeckel](http://reprap.org/wiki/Haeckel) 47cm x 47cm x 57cm size for a 20cm x 20cm x 35cm print volume)
 * **for makers** : if you have time, are handyman, own a 3D printer (or know someone) and like precision, this CNC is done for you.
@@ -32,6 +32,13 @@ Prusa i3
 	* [x] [X](./documentation/x_axis/x_axis.md) - Doc in progress
 	* [x] [Y](./documentation/y_axis/y_axis.md)
 	* [x] [Z](./documentation/z_axis/z_axis.md)
+	* [ ] Extruder - TODO
+	* [ ] Milling tool - TODO
+
+3. [x] Electronic
+	* [x] [Power supply](./documentation/power_supply/power_supply.md) - Doc in progress
+	* [ ] Wires - TODO
+	* [ ] Program and drivers - TODO
 
 
 

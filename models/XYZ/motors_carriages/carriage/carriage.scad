@@ -34,7 +34,7 @@ module positioned_rod(pos_x, show_rods) {
     rotate([0, 0, 90])
     rod(show_rods);
 }
-// draw cariage rods
+// draw carriage rods
 
 module rods(show_rods) {
     rod(show_rods);

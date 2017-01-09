@@ -1,7 +1,7 @@
 $fn=20;
 
 include <../../config.scad>
-include <../cariage/cariage.scad>
+include <../carriage/carriage.scad>
 
 rod_side = 20.4;
 
@@ -12,7 +12,7 @@ rod_fix_thickness_y = 10;
 rod_fix_thickness_z = 4;
 rod_fix_thickness_z_gap = 0.6;
 
-cariage_fix_z_adjust = 25;
+carriage_fix_z_adjust = 25;
 
 
 rod_fix_x = rod_side + 2 * rod_fix_thickness_x;
@@ -21,19 +21,19 @@ rod_fix_z = rod_side + rod_fix_thickness_z - rod_fix_thickness_z_gap;
 
 rod_fix_z_offset = -(rod_fix_z / 2) + (rod_side / 2) - rod_fix_thickness_z_gap;
 
-cariage_fix_thickness = 2.5;
-cariage_fix_thickness_z = 10;
+carriage_fix_thickness = 2.5;
+carriage_fix_thickness_z = 10;
 
-cariage_fix_x = rod_fix_x + pieces_margin + (cariage_fix_thickness * 2);
-cariage_fix_y = rod_fix_y + pieces_margin + cariage_fix_thickness;
-cariage_fix_z = cariage_fix_thickness_z + rod_fix_z + 2;
+carriage_fix_x = rod_fix_x + pieces_margin + (carriage_fix_thickness * 2);
+carriage_fix_y = rod_fix_y + pieces_margin + carriage_fix_thickness;
+carriage_fix_z = carriage_fix_thickness_z + rod_fix_z + 2;
 
-cariage_fix_y_offset = -(cariage_fix_thickness / 2);
-cariage_fix_z_offset = (cariage_fix_z / 2) - cariage_fix_thickness_z;
+carriage_fix_y_offset = -(carriage_fix_thickness / 2);
+carriage_fix_z_offset = (carriage_fix_z / 2) - carriage_fix_thickness_z;
 
-cariage_fix_back_plate_x = cariage_fix_x;
-cariage_fix_back_plate_y = 5;
-cariage_fix_back_plate_z = base_z;
+carriage_fix_back_plate_x = carriage_fix_x;
+carriage_fix_back_plate_y = 5;
+carriage_fix_back_plate_z = base_z;
 
 screw_head_diameter = 6;
 
@@ -95,7 +95,7 @@ module rod_fix() {
 
 
 /*
-    CARIAGE FIX
+    carriage FIX
 */
 
 
@@ -104,7 +104,7 @@ module base_screw_remove_fixation(pos_x, pos_z) {
 	screw_head_height = 3;
 
 	fixation_offset_x = 8;
-	fixation_offset_y = -(cariage_fix_back_plate_y / 2) + screw_head_height * 1;
+	fixation_offset_y = -(carriage_fix_back_plate_y / 2) + screw_head_height * 1;
 	fixation_offset_z = (base_z / 2) - (screw_virtual_holder_side_smaller / 2);
 	
 	translate([fixation_offset_x * pos_x, fixation_offset_y, fixation_offset_z * pos_z])
@@ -121,20 +121,20 @@ module base_screw_remove_fixation(pos_x, pos_z) {
 }
 //base_screw_remove_fixation
 
-module positioned_cariage_fix_screws() {
+module positioned_carriage_fix_screws() {
 	base_screw_remove_fixation(+1, +1);
 	base_screw_remove_fixation(-1, +1);
 	base_screw_remove_fixation(+1, -1);
 	base_screw_remove_fixation(-1, -1);
 }
-//positioned_cariage_fix_screws
+//positioned_carriage_fix_screws
 
 
 
 
 
 
-module cariage_fix_screw(pos_x) {
+module carriage_fix_screw(pos_x) {
 	screw_x_offset = (rod_fix_x / 2) - (rod_fix_thickness_x / 2);
 	color([1, 0, 0])
 	translate([screw_x_offset * pos_x, 0, 0])
@@ -142,97 +142,97 @@ module cariage_fix_screw(pos_x) {
 		screw();
 		
 		nut_y = 20;
-		nut_offset_z = -(cariage_fix_thickness_z / 2);
+		nut_offset_z = -(carriage_fix_thickness_z / 2);
 		translate([0, 0, nut_offset_z])
 		cube([screws_nuts_side_min, nut_y, screw_nuts_height], center = true);
 	}
 	
 }
-// cariage_fix_screw
+// carriage_fix_screw
 
-module cariage_fix_screw_remove() {
-	cariage_fix_screw(+1);
-	cariage_fix_screw(-1);
+module carriage_fix_screw_remove() {
+	carriage_fix_screw(+1);
+	carriage_fix_screw(-1);
 }
-//cariage_fix_screw_remove
+//carriage_fix_screw_remove
 
-module cariage_fix_base_remove() {
-	cariage_fix_base_remove_x = rod_fix_x + pieces_margin;
-	cariage_fix_base_remove_y = (rod_fix_y + pieces_margin);
-	cariage_fix_base_remove_z = 30;
+module carriage_fix_base_remove() {
+	carriage_fix_base_remove_x = rod_fix_x + pieces_margin;
+	carriage_fix_base_remove_y = (rod_fix_y + pieces_margin);
+	carriage_fix_base_remove_z = 30;
 	
 	color([1, 0, 0])
-	translate([0, 0, (cariage_fix_base_remove_z / 2)])
+	translate([0, 0, (carriage_fix_base_remove_z / 2)])
 	union() {
-		cube([cariage_fix_base_remove_x, cariage_fix_base_remove_y + 0.01, cariage_fix_base_remove_z], center = true);
+		cube([carriage_fix_base_remove_x, carriage_fix_base_remove_y + 0.01, carriage_fix_base_remove_z], center = true);
 		
-		cariage_fix_base_remove_x_2 = rod_side + 2;
+		carriage_fix_base_remove_x_2 = rod_side + 2;
 		translate([0, 0, rod_fix_thickness_z])
-		cube([cariage_fix_base_remove_x_2, 30, cariage_fix_base_remove_z], center = true);
+		cube([carriage_fix_base_remove_x_2, 30, carriage_fix_base_remove_z], center = true);
 		
 		
-		cariage_fix_base_remove_cylinder_diameter = 7;
-		cylinder (r=(cariage_fix_base_remove_cylinder_diameter / 2), h=60 , center=true);
+		carriage_fix_base_remove_cylinder_diameter = 7;
+		cylinder (r=(carriage_fix_base_remove_cylinder_diameter / 2), h=60 , center=true);
 	}
 }
-//cariage_fix_base_remove
+//carriage_fix_base_remove
 
-module cariage_fix_base() {
+module carriage_fix_base() {
 	color([1, 1, 0, 0.7])
-	translate([0, cariage_fix_y_offset, cariage_fix_z_offset])
-	cube([cariage_fix_x, cariage_fix_y, cariage_fix_z], center = true);
+	translate([0, carriage_fix_y_offset, carriage_fix_z_offset])
+	cube([carriage_fix_x, carriage_fix_y, carriage_fix_z], center = true);
 }
-//cariage_fix_base
+//carriage_fix_base
 
-module cariage_fix_back_plate() {
+module carriage_fix_back_plate() {
 	
 	
 	
-	cariage_fix_back_plate_y_offset = cariage_fix_y_offset + (cariage_fix_y / 2) + (cariage_fix_back_plate_y / 2);
-	cariage_fix_back_plate_z_offset = (cariage_fix_back_plate_z / 2) - cariage_fix_thickness_z;
+	carriage_fix_back_plate_y_offset = carriage_fix_y_offset + (carriage_fix_y / 2) + (carriage_fix_back_plate_y / 2);
+	carriage_fix_back_plate_z_offset = (carriage_fix_back_plate_z / 2) - carriage_fix_thickness_z;
 	
-	translate([0, cariage_fix_back_plate_y_offset, cariage_fix_back_plate_z_offset])
+	translate([0, carriage_fix_back_plate_y_offset, carriage_fix_back_plate_z_offset])
 	difference() {
 		color([1, 1, 0, 0.7])
-		cube([cariage_fix_back_plate_x, cariage_fix_back_plate_y + 0.01, cariage_fix_back_plate_z], center = true);
+		cube([carriage_fix_back_plate_x, carriage_fix_back_plate_y + 0.01, carriage_fix_back_plate_z], center = true);
 		
-		positioned_cariage_fix_screws();
+		positioned_carriage_fix_screws();
 	}
 }
-//cariage_fix_back_plate
+//carriage_fix_back_plate
 
 
-module positionned_cariage_fix_back_plate() {
+module positionned_carriage_fix_back_plate() {
 	
 	union() {
 		
-		translate([0, 0, cariage_fix_z_adjust - 0.01])
-		cariage_fix_back_plate();
+		translate([0, 0, carriage_fix_z_adjust - 0.01])
+		carriage_fix_back_plate();
 		
 		
 		
-		cariage_fix_back_plate_remain_y = cariage_fix_back_plate_y - 2;
-		cariage_fix_back_plate_remain_z = cariage_fix_z_adjust;
+		carriage_fix_back_plate_remain_y = carriage_fix_back_plate_y - 2;
+		carriage_fix_back_plate_remain_z = carriage_fix_z_adjust;
 		
-		cariage_fix_back_plate_remain_y_offset = cariage_fix_y_offset + (cariage_fix_y / 2) + (cariage_fix_back_plate_remain_y / 2);
+		carriage_fix_back_plate_remain_y_offset = carriage_fix_y_offset + (carriage_fix_y / 2) + (carriage_fix_back_plate_remain_y / 2);
 		
-		cariage_fix_back_plate_z_offset = (cariage_fix_back_plate_remain_z / 2) - cariage_fix_thickness_z;
+		carriage_fix_back_plate_z_offset = (carriage_fix_back_plate_remain_z / 2) - carriage_fix_thickness_z;
 		
-		translate([0, cariage_fix_back_plate_remain_y_offset, cariage_fix_back_plate_z_offset])
-		cube([cariage_fix_back_plate_x, cariage_fix_back_plate_remain_y + 0.01, cariage_fix_back_plate_remain_z], center = true);
+		translate([0, carriage_fix_back_plate_remain_y_offset, carriage_fix_back_plate_z_offset])
+		cube([carriage_fix_back_plate_x, carriage_fix_back_plate_remain_y + 0.01, carriage_fix_back_plate_remain_z], center = true);
 	}
 }
-//positionned_cariage_fix_back_plate
+//positionned_carriage_fix_back_plate
 
 
-module cariage_fix() {
+module carriage_fix() {
 	difference() {
-		cariage_fix_base();
-		cariage_fix_base_remove();
-		cariage_fix_screw_remove();
+		carriage_fix_base();
+		carriage_fix_base_remove();
+		carriage_fix_screw_remove();
 	}
 }
-// cariage_fix
+// carriage_fix
 
 
 module _render() {
@@ -240,8 +240,8 @@ module _render() {
 //	rod_fix();
 	
 	union() {
-		cariage_fix();
-		positionned_cariage_fix_back_plate();
+		carriage_fix();
+		positionned_carriage_fix_back_plate();
 	}
 }
 

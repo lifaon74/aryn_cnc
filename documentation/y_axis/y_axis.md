@@ -6,7 +6,7 @@
 | 2 | [Y carriage](#y-carriage-x-2) | 
 | 2 | [Motor holder](#motor-holder-x-2) | 
 | 4 | [Y frame fix](#frame-fix-x-4-2-mirrored) (2 mirrored) |
-| 4 | [Belt tensionner](#) |
+| 4 | [Belt tensioner](#) - TODO |
 | 2 | [GT2 Belt](../bom/bom.md) ~80cm |
 | 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x 649mm (1.5mm thickness) |
 
@@ -27,7 +27,7 @@
 | 8 | [M3 nut](../bom/bom.md) | 
 
 #### Print details
-* Files: [cariage_bot_y.stl](../../models/XYZ/motors_cariages/cariage/cariage_bot_y.stl), [cariage_top_y.stl](../../models/XYZ/motors_cariages/cariage/cariage_top_y.stl)
+* Files: [carriage_bot_y.stl](../../models/XYZ/motors_carriages/carriage/carriage_bot_y.stl), [carriage_top_y.stl](../../models/XYZ/motors_carriages/carriage/carriage_top_y.stl)
 * Time: 4h x 2
 * Layer height: 0.2mm
 * Weight: 50g x 2
@@ -59,10 +59,10 @@
 | 4 | [M3 self locking nut](../bom/bom.md) | 
 
 #### Print details
-* Files: [motor_block.stl](../../models/XYZ/motors_cariages/motor_block/motor_block.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_cariages/motor_block/motor_block_pulley_holder.stl)
-* Time: -
+* Files: [motor_block.stl](../../models/XYZ/motors_carriages/motor_block/motor_block.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_carriages/motor_block/motor_block_pulley_holder.stl)
+* Time: - TODO
 * Layer height: 0.2mm
-* Weight: -
+* Weight: - TODO
 * Support: No
 
 #### Build steps
@@ -82,7 +82,7 @@
 | 2 | [M3 T nut](../bom/bom.md) |
 
 #### Print details
-* Files: [motor_block.stl](../../models/XYZ/motors_cariages/rod_fix/rod_fix_bot.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_cariages/rod_fix/rod_fix_top.stl)
+* Files: [motor_block.stl](../../models/XYZ/motors_carriages/rod_fix/rod_fix_bot.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_carriages/rod_fix/rod_fix_top.stl)
 * Time: 1h30m + 30m
 * Layer height: 0.2mm
 * Weight: 26g
@@ -93,7 +93,7 @@
 <a href="./DSC_0027.JPG"><img src="./DSC_0027.JPG" height="500"></a>
 <a href="./DSC_0029.JPG"><img src="./DSC_0029.JPG" height="500"></a>
 
-### Belt tensionner x 4
+### Belt tensioner x 4
 #### BOM
 | Quantity | Name |
 | :---: | --- |
@@ -103,7 +103,7 @@
 | 3 | [M2 nut](../bom/bom.md) |
 
 #### Print details
-* Files: [belt_tensioner_bot_grip.stl](../../models/XYZ/motors_cariages/belt_tensioner/belt_tensioner_bot_grip.stl), [belt_tensioner_top.stl](../../models/XYZ/motors_cariages/belt_tensioner/belt_tensioner_top.stl)
+* Files: [belt_tensioner_bot_grip.stl](../../models/XYZ/motors_carriages/belt_tensioner/belt_tensioner_bot_grip.stl), [belt_tensioner_top.stl](../../models/XYZ/motors_carriages/belt_tensioner/belt_tensioner_top.stl)
 * Time: 10m
 * Layer height: 0.2mm
 * Weight: 2g

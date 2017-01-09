@@ -14,8 +14,9 @@
 | 608ZZ bearing | <a href="./608ZZ_bearing.jpg"><img src="./608ZZ_bearing.jpg" width="100" height="100"></a> |
 | Thrust bearing 8mm | <a href="./thrust_bearing_8mm.jpg"><img src="./thrust_bearing_8mm.jpg" width="100" height="100"></a> | 
 | | |
-| M6 nut | <a href="./m6_nut.jpg"><img src="./m6_nut.jpg" width="100" height="100"></a> | 
-| | | 
+| M6 screw | <a href="./m6_screw.jpg"><img src="./m6_screw.jpg" width="100" height="100"></a> - TODO |
+| M6 nut | <a href="./m6_nut.jpg"><img src="./m6_nut.jpg" width="100" height="100"></a> |
+| | |
 | Extruded aluminum | <a href="./m6_nut.jpg"><img src="./extruded_aluminum.jpg" width="100" height="100"></a> | 
 | Aluminum bar . 16mm x 16mm x Xmm (1.5mm thickness) | <a href="./aluminum_bar.jpg"><img src="./aluminum_bar.jpg" width="100" height="100"></a> | 
 | | | 

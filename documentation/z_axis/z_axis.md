@@ -1,5 +1,8 @@
 # Z Axis
 
+- TODO link table of contents
+- TODO build plate !
+
 ## BOM
 | Quantity | Name |
 | :---: | --- |
@@ -33,7 +36,7 @@
 | 4 | [M3 nut](../bom/bom.md) | 
 
 #### Print details
-* Files: [cariage_z_back.stl](../../models/XYZ/Z/cariage/cariage_z_back.stl), [cariage_z_front.stl](../../models/XYZ/Z/cariage/cariage_z_front.stl)
+* Files: [carriage_z_back.stl](../../models/XYZ/Z/carriage/carriage_z_back.stl), [carriage_z_front.stl](../../models/XYZ/Z/carriage/carriage_z_front.stl)
 * Time: 2h x 2
 * Layer height: 0.2mm
 * Weight: 13g x 2

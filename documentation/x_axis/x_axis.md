@@ -1,162 +1,128 @@
 # X Axis
 
+-TODO link table of contents
+
 ## BOM
 | Quantity | Name |
 | :---: | --- |
-| 4 | [Z carriage](#) | 
-| 2 | [Motor holder](#) | 
-| 2 | [Belt tensioner](#) | 
-| 8 | [Z frame fix](#) (4 mirrored) |
-| 2 | [GT2 Belt](../bom/bom.md) loop 1524mm |
+| 2 | [X carriage](#) |
+| 2 | [Motor holder](#) |
+| 4 | [Belt tensioner](#) (2 mirrored) |
+| 2 | [GT2 Belt](../bom/bom.md) ~80cm |
+| 2 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
 
-### Z carriage x 4
+### X carriage x 2
 #### BOM
 ##### Bearings
 | Quantity | Name |
 | :---: | --- |
-| 4 | [M3 screw](../bom/bom.md) 16mm | 
-| 16 | [M3 washer](../bom/bom.md) | 
-| 4 | [M3 self locking nut](../bom/bom.md) | 
-| 4 | [623ZZ bearing](../bom/bom.md) | 
-
-##### Lead nut
-| Quantity | Name |
-| :---: | --- |
-| 4 | [M3 screw](../bom/bom.md) 16mm | 
-| 4 | [M3 nut](../bom/bom.md) | 
-| 1 | [Threaded rod lead nut](../bom/bom.md) | 
+| 8 | [M3 screw](../bom/bom.md) 16mm |
+| 32 | [M3 washer](../bom/bom.md) |
+| 8 | [M3 self locking nut](../bom/bom.md) |
+| 8 | [623ZZ bearing](../bom/bom.md) |
 
 ##### Fixing
 | Quantity | Name |
 | :---: | --- |
-| 4 | [M3 screw](../bom/bom.md) 16mm | 
-| 4 | [M3 nut](../bom/bom.md) | 
+| 8 | [M3 screw](../bom/bom.md) 16mm |
+| 8 | [M3 nut](../bom/bom.md) |
 
 #### Print details
-* Files: [cariage_z_back.stl](../../models/XYZ/Z/cariage/cariage_z_back.stl), [cariage_z_front.stl](../../models/XYZ/Z/cariage/cariage_z_front.stl)
-* Time: 2h x 2
+* Files: [carriage_bot_x.stl](../../models/XYZ/motors_carriages/carriage/carriage_bot_x.stl), [carriage_top_x.stl](../../models/XYZ/motors_carriages/carriage/carriage_top_x.stl)
+* Time: 4h x 2
 * Layer height: 0.2mm
-* Weight: 13g x 2
+* Weight: 50g x 2
 * Support: No
 * Infill: 50%
 
 #### Build steps
-<a href="./DSC_0041.JPG"><img src="./DSC_0014.JPG" height="500"></a>
-<a href="./DSC_0042.JPG"><img src="./DSC_0015.JPG" height="500"></a>
-<a href="./DSC_0043.JPG"><img src="./DSC_0043.JPG" height="500"></a>
+<a href="./DSC_0020.JPG"><img src="./DSC_0020.JPG" height="500"></a>
 
 ### Motor holder x 2
 #### BOM
 ##### Motor
-###### High torque (recommended, can lift ~16kg)
 | Quantity | Name |
 | :---: | --- |
-| 1 | [Nema 17 with gearbox](../bom/bom.md) | 
-| 1 | [GT2 pulley](../bom/bom.md) 20 teeth 8mm bore | 
-| 4 | [M3 screw](../bom/bom.md) 35mm | 
-| 4 | [M3 washer](../bom/bom.md) | 
-
-###### Low torque (alternative, can lift ~4kg)
-| Quantity | Name |
-| :---: | --- |
-| 1 | [Nema 17](../bom/bom.md) | 
-| 1 | [GT2 pulley](../bom/bom.md) 20 teeth 5mm bore | 
-| 4 | [M3 screw](../bom/bom.md) 8mm | 
-| 4 | [M3 washer](../bom/bom.md) | 
+| 1 | [Nema 17 motor](../bom/bom.md) |
+| 1 | [GT2 pulley](../bom/bom.md) 20 teeth 5mm bore |
+| 4 | [M3 screw](../bom/bom.md) 8mm |
+| 5 | [M3 screw](../bom/bom.md) 20mm |
+| 5 | [M3 nut](../bom/bom.md) |
+| 9 | [M3 washer](../bom/bom.md) |
+| 2 | [Pulley](../pulley/pulley.md) |
 
 ##### Fixing
 | Quantity | Name |
 | :---: | --- |
-| 4 | [M3 screw](../bom/bom.md) 8~10mm | 
-| 4 | [M3 washer](../bom/bom.md) | 
-| 4 | [M3 self locking nut](../bom/bom.md) | 
+| 4 | [M3 screw](../bom/bom.md) 12mm |
+| 8 | [M3 washer](../bom/bom.md) |
+| 4 | [M3 self locking nut](../bom/bom.md) |
 
 #### Print details
-##### Motor block
-* File: [motor_block.stl](../../models/XYZ/Z/motor_block/motor_block.stl)
-* Time: 1h50
+* Files: [motor_block.stl](../../models/XYZ/motors_carriages/motor_block/motor_block.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_carriages/motor_block/motor_block_pulley_holder.stl)
+* Time: - TODO
 * Layer height: 0.2mm
-* Weight: 22g
-* Support: No
-
-##### Gearbox adatper (high torque)
-* File: [motor_gearbox_adapter.stl](../../models/XYZ/Z/motor_block/motor_gearbox_adapter.stl)
-* Time: 40m
-* Layer height: 0.2mm
-* Weight: 4g
+* Weight: - TODO
 * Support: No
 
 #### Build steps
-<a href="./DSC_0035_2.JPG"><img src="./DSC_0035_2.JPG" height="500"></a>
-<a href="./DSC_0044.JPG"><img src="./DSC_0044.JPG" height="500"></a>
+<a href="./DSC_0021.JPG"><img src="./DSC_0021.JPG" height="500"></a>
 
-
-### Belt tensioner x 2
-#### BOM
+### Belt tensioner x 4 (2 mirrored)
+#### Belt grip
+##### BOM
 | Quantity | Name |
 | :---: | --- |
-| 3 | [Pulley](../pulley/pulley.md) |
-| 4 | [M3 screw](../bom/bom.md) 30mm | 
-| 1 | [M3 screw](../bom/bom.md) 20mm | 
-| 6 | [M3 washer](../bom/bom.md) | 
-| 7 | [M3 nut](../bom/bom.md) | 
-| 1 | [M3 self locking nut](../bom/bom.md) | 
-| 1 | [M3 butterfly nut](../bom/bom.md) | 
+| 2 | [M2 screw](../bom/bom.md) 6~8mm |
+| 1 | [M2 screw](../bom/bom.md) 20~25mm |
+| 1 | [M2 washer](../bom/bom.md) |
+| 3 | [M2 nut](../bom/bom.md) |
 
-#### Print details
-* File: [motor_block_pulley_holder_bot.stl](../../models/XYZ/Z/motor_block/motor_block_pulley_holder_bot.stl), [motor_block_pulley_holder_top.stl](../../models/XYZ/Z/motor_block/motor_block_pulley_holder_top.stl), [pulley_holder.stl](../../models/XYZ/Z/motor_block/pulley_holder.stl)
-* Time: 40min + 40min + 5min
+##### Print details
+* Files: [belt_tensioner_bot.stl](../../models/XYZ/motors_carriages/belt_tensioner/belt_tensioner_bot.stl), [belt_tensioner_top_grip.stl](../../models/XYZ/motors_carriages/belt_tensioner/belt_tensioner_top_grip.stl)
+* Time: 10m
 * Layer height: 0.2mm
-* Weight: 7g + 7g + 1g
+* Weight: 2g
 * Support: No
 
-#### Build steps
-<a href="./DSC_0004.JPG"><img src="./DSC_0004.JPG" height="500"></a>
-<a href="./DSC_0006.JPG"><img src="./DSC_0006.JPG" height="500"></a>
-<a href="./DSC_0007.JPG"><img src="./DSC_0007.JPG" height="500"></a>
-
-Take time to adjust the space beetween this part and the motor bloc. Maybe you'll need to add more washes.
-<a href="./DSC_0008.JPG"><img src="./DSC_0008.JPG" height="500"></a>
-<a href="./DSC_0009.JPG"><img src="./DSC_0009.JPG" height="500"></a>
-<a href="./DSC_0011.JPG"><img src="./DSC_0011.JPG" height="500"></a>
-<a href="./DSC_0046.JPG"><img src="./DSC_0046.JPG" height="500"></a>
-
-
-### Frame fix x 8 (4 mirrored)
-
-#### BOM
-##### For a pair of fixations (top and bottom)
+#### Belt grip case
+##### BOM
 | Quantity | Name |
 | :---: | --- |
-| 1 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
-| 1 | [Threaded rod](../bom/bom.md) 8mm x 580mm |
+| 2 | [M3 screw](../bom/bom.md) 30mm |
+| 2 | [M3 washer](../bom/bom.md) |
+| 2 | [M3 nut](../bom/bom.md) |
 
-##### For individual fixation
-| Quantity | Name |
-| :---: | --- |
-| 4 | [M3 screw](../bom/bom.md) 8~10mm or 35mm |
-| 3 | [M3 screw](../bom/bom.md) 16mm |
-| 4 | [M3 washer](../bom/bom.md) |
-| 3 | [M3 nut](../bom/bom.md) |
-| 4 | [M3 T nut](../bom/bom.md) |
-| 1 | [608ZZ bearing](../bom/bom.md) |
-| 1 | [Thrust bearing 8mm](../bom/bom.md) |
-| 1 | [GT2 pulley (20 teeth 8mm bore)](../bom/bom.md) |
-
-#### Print details
-* Files: [rod_fix_z_bot.stl](../../models/XYZ/Z/rod_fix_z/rod_fix_z_bot.stl), [rod_fix_z_top.stl](../../models/XYZ/Z/rod_fix_z/rod_fix_z_top.stl)
-* Time: 1h30 + 40m
+##### Print details
+* Files: [belt_holder_x_bot.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_bot.stl), [belt_holder_x_bot.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_top.stl)
+* Time: - TODO
 * Layer height: 0.2mm
-* Weight: 32g
+* Weight: - TODO
 * Support: No
 * Infill: 50%
 
+#### Belt grip fix
+##### BOM
+| Quantity | Name |
+| :---: | --- |
+| 4 | [M3 screw](../bom/bom.md) 10mm |
+| 4 | [M3 washer](../bom/bom.md) |
+| 4 | [M3 nut](../bom/bom.md) |
+
+##### Print details
+* Files: [belt_holder_x_fix.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_fix.stl)
+* Time: - TODO
+* Layer height: 0.2mm
+* Weight: - TODO
+* Support: No
+
+
 #### Build steps
-<a href="./DSC_0038.JPG"><img src="./DSC_0038.JPG" height="500"></a>
-<a href="./DSC_0040.JPG"><img src="./DSC_0040.JPG" height="500"></a>
-<a href="./DSC_0039.JPG"><img src="./DSC_0039.JPG" height="500"></a>
+Take care to have exactly the same length (number of teeth) for both of the belts.
 
-##### Infos
-* The top is the same as the bottom (thrust bearing and GT2 pulley) except that the belt goes only on the bottom.
-* It's not visible on the pictures, but there's too a GT2 pulley on the top. The purpose is to limit the movements of the rod on the Z axis.
+<a href="./DSC_0025.JPG"><img src="./DSC_0025.JPG" height="500"></a>
+<a href="./DSC_0027.JPG"><img src="./DSC_0027.JPG" height="500"></a>
+<a href="./DSC_0028.JPG"><img src="./DSC_0028.JPG" height="500"></a>
 
+## Final
+<a href="./DSC_00030.JPG"><img src="./DSC_00030.JPG" height="500"></a>
