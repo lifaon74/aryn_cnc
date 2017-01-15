@@ -60,9 +60,9 @@
 
 #### Print details
 * Files: [motor_block.stl](../../models/XYZ/motors_carriages/motor_block/motor_block.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_carriages/motor_block/motor_block_pulley_holder.stl)
-* Time: - TODO
+* Time: 1h20
 * Layer height: 0.2mm
-* Weight: - TODO
+* Weight: 16g
 * Support: No
 
 #### Build steps

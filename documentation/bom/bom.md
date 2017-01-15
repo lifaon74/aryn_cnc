@@ -14,7 +14,7 @@
 | 608ZZ bearing | <a href="./608ZZ_bearing.jpg"><img src="./608ZZ_bearing.jpg" width="100" height="100"></a> |
 | Thrust bearing 8mm | <a href="./thrust_bearing_8mm.jpg"><img src="./thrust_bearing_8mm.jpg" width="100" height="100"></a> | 
 | | |
-| M6 screw | <a href="./m6_screw.jpg"><img src="./m6_screw.jpg" width="100" height="100"></a> - TODO |
+| M6 screw | <a href="./m6_screw.jpg"><img src="./m6_screw.jpg" width="100" height="100"></a> |
 | M6 nut | <a href="./m6_nut.jpg"><img src="./m6_nut.jpg" width="100" height="100"></a> |
 | | |
 | Extruded aluminum | <a href="./m6_nut.jpg"><img src="./extruded_aluminum.jpg" width="100" height="100"></a> | 
@@ -31,6 +31,12 @@
 | | |
 | Switch (SS-5GL) | <a href="./SS_5GL.jpg"><img src="./SS_5GL.jpg" width="100" height="100"></a> | 
 | | |
-| Male power socket IEC320  | <a href="./male_power_socket_iec320.jpg"><img src="./male_power_socket_iec320.jpg" width="100" height="100"></a> | 
+| Male power socket IEC320  | <a href="./male_power_socket_iec320.jpg"><img src="./male_power_socket_iec320.jpg" width="100" height="100"></a> |
+| Heat Shrink Tubing  | <a href="./heat_shrink_tubing.jpg"><img src="./heat_shrink_tubing.jpg" width="100" height="100"></a> |
+| Wire  | <a href="./wire_1.5.jpg"><img src="./wire_1.5.jpg" width="100" height="100"></a> |
+| Crimp Terminal Connector  | <a href="./crimp_terminal_connector.jpg"><img src="./crimp_terminal_connector.jpg" width="100" height="100"></a> |
+| Male plug | <a href="./male_plug_eu.jpg"><img src="./male_plug_eu.jpg" width="100" height="100"></a> |
+| Power strip | <a href="./power_strip_eu.jpg"><img src="./power_strip_eu.jpg" width="100" height="100"></a> |
+| Power supply | <a href="./power_supply.jpg"><img src="./power_supply.jpg" width="100" height="100"></a> |
 
 

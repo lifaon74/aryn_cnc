@@ -51,9 +51,9 @@
 
 #### Print details
 * File: [foot.stl](../../models/frame/foot.stl)
-* Time: - TODO
+* Time: 25min
 * Layer height: 0.2mm
-* Weight: - TODO
+* Weight: 4.5g
 * Support: NO
 * Infill: 50%
 

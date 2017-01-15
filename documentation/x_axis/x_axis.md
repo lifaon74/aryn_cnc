@@ -60,9 +60,9 @@
 
 #### Print details
 * Files: [motor_block.stl](../../models/XYZ/motors_carriages/motor_block/motor_block.stl), [motor_block_pulley_holder.stl](../../models/XYZ/motors_carriages/motor_block/motor_block_pulley_holder.stl)
-* Time: - TODO
+* Time: 1h20
 * Layer height: 0.2mm
-* Weight: - TODO
+* Weight: 16g
 * Support: No
 
 #### Build steps
@@ -94,10 +94,10 @@
 | 2 | [M3 nut](../bom/bom.md) |
 
 ##### Print details
-* Files: [belt_holder_x_bot.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_bot.stl), [belt_holder_x_bot.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_top.stl)
-* Time: - TODO
+* Files: [belt_holder_x_bot.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_bot.stl), [belt_holder_x_top.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_top.stl)
+* Time: 40m + 5m
 * Layer height: 0.2mm
-* Weight: - TODO
+* Weight: 9g + 1.5g
 * Support: No
 * Infill: 50%
 
@@ -111,9 +111,9 @@
 
 ##### Print details
 * Files: [belt_holder_x_fix.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_fix.stl)
-* Time: - TODO
+* Time: 35m
 * Layer height: 0.2mm
-* Weight: - TODO
+* Weight: 7.5g
 * Support: No
 
 
