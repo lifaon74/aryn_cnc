@@ -125,4 +125,4 @@ Take care to have exactly the same length (number of teeth) for both of the belt
 <a href="./DSC_0028.JPG"><img src="./DSC_0028.JPG" height="500"></a>
 
 ## Final
-<a href="./DSC_00030.JPG"><img src="./DSC_00030.JPG" height="500"></a>
+<a href="./DSC_0030.JPG"><img src="./DSC_0030.JPG" height="500"></a>
