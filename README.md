@@ -29,15 +29,15 @@ Prusa i3
 ## Table of Content
 1. [x] [Frame](./documentation/frame/frame.md)
 2. [x] Axis
-	* [x] [X](./documentation/x_axis/x_axis.md) - Doc in progress
+	* [x] [X](./documentation/x_axis/x_axis.md)
 	* [x] [Y](./documentation/y_axis/y_axis.md)
 	* [x] [Z](./documentation/z_axis/z_axis.md)
 	* [ ] Extruder - TODO
 	* [ ] Milling tool - TODO
 
 3. [x] Electronic
-	* [x] [Power supply](./documentation/power_supply/power_supply.md) - Doc in progress
-	* [ ] Wires - TODO
+	* [x] [Power supply](./documentation/power_supply/power_supply.md) - Doc in progress (TODO Images)
+	* [ ] Wiring - TODO
 	* [ ] Program and drivers - TODO
 
 
