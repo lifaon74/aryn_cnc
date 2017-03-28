@@ -2,25 +2,10 @@ $fn=20;
 
 include <../XYZ/config.scad>
 
-show_screws     = true;
-show_bearings   = true;
 show_rods       = true;
+use_plain_base = true;
 
 base_block_y = 70;
-
-/*
-    Computed variables for future use
-*/
-    // base position
-base_block_pos_y = (base_block_y / 2) - (bearing_virtual_cube_side / 2)/* - screw_virtual_holder_side*/ - outer_screw_offset;
-
-    // bearing x and z position
-bearing_pos = (bearing_outer_diameter + rod_side) / (2 * sqrt(2));
-
-
-
-echo("base_block_pos_y", base_block_pos_y);
-
 
 		
 /*
@@ -129,130 +114,74 @@ module base_block() {
 }
 // base_block
 
-
-module spindler_motor(margin = 1) {
-	$fn=100;
-	
-	spindler_height = 94;
-	spindler_diameter_inner = 55 + 2 * margin;
-	spindler_diameter_outer = 56.5 + 2 * margin;
-	spindler_case_bottom_z = 23;
-	spindler_case_top_z = 15;
-	
-	pindler_shaft_length = 40;
-	spindler_shaft_diameter = 12 + 2 * margin;
-	
-	spindler_shaft_circle_length = 3 + margin;
-	spindler_shaft_circle_diameter = 25 + 2 * margin;
-	
-	translate([0, 0, 0.001])
-	union() {
-		// motor
-		color([0.1, 0.1, 0.1])
-		translate([0, 0, (spindler_height / 2)])
-		cylinder(r=(spindler_diameter_inner / 2), h=spindler_height, center=true);
-		
-		// case_bottom
-		color([0.2, 0.2, 0.2])
-		translate([0, 0, (spindler_case_bottom_z / 2) - 0.001])
-		cylinder(r=(spindler_diameter_outer / 2), h=spindler_case_bottom_z, center=true);
-		
-		// case_top
-		color([0.2, 0.2, 0.2])
-		translate([0, 0, spindler_height - (spindler_case_top_z / 2) + 0.001])
-		cylinder(r=(spindler_diameter_outer / 2), h=spindler_case_top_z, center=true);
-		
-		// shaft circle
-		color([0.1, 0.1, 0.1])
-		translate([0, 0, -(spindler_shaft_circle_length / 2)])
-		cylinder(r=(spindler_shaft_circle_diameter / 2), h=spindler_shaft_circle_length, center=true);
-		
-		// shaft
-		color([0.5, 0.5, 0.5])
-		translate([0, 0, -(pindler_shaft_length / 2)])
-		cylinder(r=(spindler_shaft_diameter / 2), h=pindler_shaft_length, center=true);
-	}
-}
-// spindler_motor
-
-module spindler_screws() {
-	spindler_screw_length = 30;
-	spindler_screw_diameter = 4;
-	spindler_screw_radius = 39;
-	
-	// screws
-	color([1, 0, 0])
-	for(x = [-1 : 2 : 1]) {
-		for(y = [-1 : 2 : 1]) {
-			pos = (spindler_screw_radius / 2) / sqrt(2);
-			translate([pos * x, pos * y, 0])
-			cylinder(r=(spindler_screw_diameter / 2), h=spindler_screw_length, center=true);
-		}
-	}
-}
-// spindler_screws
-
-module spindler(margin = 1, with_screws = true) {
-	if(with_screws) {
-		union() {
-			spindler_motor(margin);
-			spindler_screws();
-		}
-	} else {
-		difference() {
-			spindler_motor(margin);
-			spindler_screws();
-		}
-	}
-}
-// spindler
-spindler();
-//spindler(0, false); // for true motor size
-
 /*
     RENDERING
 */
 
+module plain_base() {
+	separator_x = pieces_spacing * 2;
+	separator_z = (base_block_z / 2) + pieces_spacing;
+	
+	separator_x_offset = (base_block_remove_x / 2);
+	separator_z_offset = -(separator_z / 2) + (pieces_spacing / 2);
+	
+	color([1, 1, 0, 0.7])
+	difference() {
+		cube([base_block_remove_x + 0.0001, base_block_remove_y, base_block_z], center = true);
+		
+		union() {
+			translate([separator_x_offset, 0, separator_z_offset])
+			cube([separator_x, base_block_y + 10, separator_z], center = true);
+			
+			translate([-separator_x_offset, 0, separator_z_offset])
+			cube([separator_x, base_block_y + 10, separator_z], center = true);
+		}
+	}
+}
+// plain_base
 
 module piece(piece_top) {
-    difference() {
-        base_block();
+	difference() {
+		base_block();
 
-				union() {
-					base_rod_remove_holder();
-					base_separator_remove();
-					base_block_remove_ligther();
-					base_screws_remove_tighten();
-				}
-    }
+		union() {
+			base_rod_remove_holder();
+			base_separator_remove();
+			base_block_remove_ligther();
+			base_screws_remove_tighten();
+		}
+	}
 }
 // piece
 
-module _render(cube_pos_z) {
-    cube_size = 1000;
-    if(cube_pos_z == 0) {
-        rods(show_rods);
-        piece(cube_pos_z);
-    } else {  
-        difference() {
-            piece(cube_pos_z);
-					
-            translate([0, 0, -(cube_size / 2) * cube_pos_z])
-            cube([cube_size, cube_size, cube_size], center = true);
-					
+module _render_tool_base(cube_pos_z) {
+	cube_size = 1000;
+	if(cube_pos_z == 0) {
+		rods(show_rods);
+		union() {
+			piece(cube_pos_z);
+			if(use_plain_base) plain_base();
+		}
+	} else {
+		union() {
+			difference() {
+					piece(cube_pos_z);
+				
+					translate([0, 0, -(cube_size / 2) * cube_pos_z])
+					cube([cube_size, cube_size, cube_size], center = true);
+				
 //						translate([-(cube_size / 2), 0, 0])
 //						cube([cube_size, cube_size, cube_size], center = true);
-        }
-    }
-		
-		
+			}
+			
+			if(use_plain_base) plain_base();
+		}
+	}
 }
 
 
 
-_render(0); // -1 for bottom, 0, for all, 1 for top
-//_test_screw_fixer();
-//_test_screw_fixer2();
+// _render_tool_base(0); // -1 for bottom, 0, for all, 1 for top
 
 
 
