@@ -39,7 +39,6 @@ belt_holder_case_y_offset = (belt_holder_case_block_y - belt_holder_case_y) / 2 
 base_top_x = belt_holder_case_block_x;
 base_top_block_z_offset = (base_block_z / 2) + (base_top_z / 2);
 	
-carriage_block_x = (rod_side * sqrt(2)) + (screw_virtual_holder_side * 2);
 	
 base_fix_block_z_offset = (base_block_z / 2) + (base_top_z / 2);
 
@@ -71,37 +70,6 @@ module carriage_block() {
 	rod(true);
 }
 // carriage_block
-
-module carriage_block_fix_screw(pos_x, pos_y) {
-	fixation_offset_x = 5;
-	fixation_offset_y = 12;
-	
-	x_offset = (carriage_block_x / 2) - fixation_offset_x;
-	y_offset = (base_block_y / 2) - fixation_offset_y;
-	
-	screw_wacher_diameter = 8;
-	screw_wacher_z = 3;
-	screw_wacher_z_offset = (base_top_z / 2) + base_fix_block_z_offset;
-	
-	translate([(x_offset * pos_x), (y_offset * pos_y) + base_block_y_offset, 0])
-	union() {
-		screw();
-		translate([0, 0, screw_wacher_z_offset])
-		cylinder (r=(screw_wacher_diameter / 2), h=(screw_wacher_z * 2) , center=true);
-	}
-}
-//carriage_block_fix_screw
-
-
-module carriage_block_fix() {
-	carriage_block_fix_screw(+1, +1);
-	carriage_block_fix_screw(-1, +1);
-	carriage_block_fix_screw(+1, -1);
-	carriage_block_fix_screw(-1, -1);
-}
-//carriage_block_fix
-
-
 
 module belt_remove() {
 	belt_remove_y = 40;
@@ -269,7 +237,8 @@ module render_fix_block() {
 		translate([(50 / 2) + (carriage_block_x / 2 )- 6 - 5, 0, 0])
 		screws_remove();
 		
-		carriage_block_fix();
+		translate([0, base_block_y_offset, base_fix_block_z_offset])
+		carriage_block_fix(base_top_z);
 		base_fix_block_remove_lighter();
 	}
 }

@@ -65,6 +65,7 @@ base_block_remove_y = base_block_y;
 base_block_remove_z = max(rod_remove_side * sqrt(2), base_block_z - (motor_holder_thickness * 2));
 
 
+carriage_block_x = (rod_side * sqrt(2)) + (screw_virtual_holder_side * 2);
 
 /*
     RODS
@@ -109,6 +110,39 @@ module base_screw_remove_tighten() {
 }
 // base_screw_remove_tighten
 
+
+/**
+	CARRIAGE
+**/
+
+module carriage_block_fix_screw(pos_x, pos_y, height = 7) {
+	fixation_offset_x = 5;
+	fixation_offset_y = 12;
+	
+	x_offset = (carriage_block_x / 2) - fixation_offset_x;
+	y_offset = (base_block_y / 2) - fixation_offset_y;
+	
+	screw_wacher_diameter = 8;
+	screw_wacher_z = 3;
+	screw_wacher_z_offset = (height / 2);
+	
+	translate([(x_offset * pos_x), (y_offset * pos_y), 0])
+	union() {
+		screw();
+		translate([0, 0, screw_wacher_z_offset])
+		cylinder (r=(screw_wacher_diameter / 2), h=(screw_wacher_z * 2) , center=true);
+	}
+}
+//carriage_block_fix_screw
+
+
+module carriage_block_fix(height = 7) {
+	carriage_block_fix_screw(+1, +1, height);
+	carriage_block_fix_screw(-1, +1, height);
+	carriage_block_fix_screw(+1, -1, height);
+	carriage_block_fix_screw(-1, -1, height);
+}
+//carriage_block_fix
 
 
 /*
