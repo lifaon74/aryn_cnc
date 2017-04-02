@@ -1,13 +1,11 @@
-# X Axis
-
--TODO link table of contents
+# Power supply
 
 ## BOM
 | Quantity | Name |
 | :---: | --- |
-| 1 | [Power socket](#) |
-| 1 | [Power strip](#) |
-| 1 | [Power supply](#) |
+| 1 | [Power socket](#power-socket) |
+| 1 | [Power strip](#power-strip) |
+| 1 | [Power supply](#power-supply) |
 
 ### Power socket
 #### BOM
@@ -32,7 +30,7 @@
 
 #### Build steps
 Take care to properly insulate the metal contacts to avoid electrocution !
-<a href="./DSC_0036.JPG"><img src="./DSC_0036.JPG" height="500"></a>
+<a href="./DSC_0037.JPG"><img src="./DSC_0037.JPG" height="500"></a>
 
 ### Power strip
 ##### BOM
