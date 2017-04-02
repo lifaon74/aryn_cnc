@@ -37,7 +37,7 @@ Take care to properly insulate the metal contacts to avoid electrocution !
 | Quantity | Name |
 | :---: | --- |
 | 1 | [Power strip](../bom/bom.md) 5 outlets |
-| 2 | [Power strip fix](#) - TODO link |
+| 2 | [Power strip fix](#power-strip-fix-x-2) |
 
 #### Power strip fix x 2
 ##### BOM
@@ -67,7 +67,7 @@ Drill two holes into the power strip, then fix the printed part to it with a scr
 | 1 | [Power supply](../bom/bom.md) 24V 15A |
 | 1 | [Male plug](../bom/bom.md) ~20cm |
 | - | [Wire](../bom/bom.md) 20~50cm, 1.5mm^2 |
-| 2 | [Power supply fix](#) - TODO link |
+| 2 | [Power supply fix](#power-supply-fix-x-2) |
 
 #### Power supply fix x 2
 ##### BOM
