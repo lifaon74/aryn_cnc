@@ -58,7 +58,6 @@ belt_remove_part2_z_offset = (rod_remove_side / 2) + belt_holder_wall_thickness_
 
 module carriage_block() {
 	
-	
 	color([0, 0, 0, 0.7])
 	translate([-carriage_block_offset_x, base_block_y_offset, 0])
 	cube([carriage_block_x, base_block_y, base_block_z], center = true);
@@ -70,6 +69,7 @@ module carriage_block() {
 	rod(true);
 }
 // carriage_block
+carriage_block();
 
 module belt_remove() {
 	belt_remove_y = 40;

@@ -170,8 +170,8 @@ module _render_tool_base(cube_pos_z) {
 					translate([0, 0, -(cube_size / 2) * cube_pos_z])
 					cube([cube_size, cube_size, cube_size], center = true);
 				
-//						translate([-(cube_size / 2), 0, 0])
-//						cube([cube_size, cube_size, cube_size], center = true);
+						translate([-(cube_size / 2), 0, 0])
+						cube([cube_size, cube_size, cube_size], center = true);
 			}
 			
 			if(use_plain_base) plain_base();
@@ -180,8 +180,8 @@ module _render_tool_base(cube_pos_z) {
 }
 
 
-
-// _render_tool_base(0); // -1 for bottom, 0, for all, 1 for top
+use_plain_base = false;
+_render_tool_base(-1); // -1 for bottom, 0, for all, 1 for top
 
 
 
