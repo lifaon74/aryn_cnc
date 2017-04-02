@@ -32,7 +32,7 @@
 
 #### Build steps
 Take care to properly insulate the metal contacts to avoid electrocution !
-<a href="./DSC_0020.JPG"><img src="./DSC_0020.JPG" height="500"></a> - TODO
+<a href="./DSC_0036.JPG"><img src="./DSC_0036.JPG" height="500"></a>
 
 ### Power strip
 ##### BOM
@@ -60,7 +60,7 @@ Take care to properly insulate the metal contacts to avoid electrocution !
 #### Build steps
 Drill two holes into the power strip, then fix the printed part to it with a screw, a washer and a self-locking nut. Finally, fix it to the frame.
 
-<a href="./DSC_0020.JPG"><img src="./DSC_0020.JPG" height="500"></a> - TODO
+<a href="./DSC_0038.JPG"><img src="./DSC_0038.JPG" height="500"></a>
 
 ### Power supply
 ##### BOM
@@ -90,4 +90,4 @@ Drill two holes into the power strip, then fix the printed part to it with a scr
 #### Build steps
 Drill two holes into the power strip, then fix the printed part to it with a screw, a washer and a self-locking nut. Finally, fix it to the frame.
 
-<a href="./DSC_0020.JPG"><img src="./DSC_0020.JPG" height="500"></a> - TODO
+<a href="./DSC_0036.JPG"><img src="./DSC_0036.JPG" height="500"></a>
