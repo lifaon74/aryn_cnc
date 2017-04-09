@@ -116,6 +116,34 @@ Take care to have exactly the same length (number of teeth) for both of the belt
 <a href="./DSC_0031.JPG"><img src="./DSC_0031.JPG" height="500"></a>
 <a href="./DSC_0032.JPG"><img src="./DSC_0032.JPG" height="500"></a>
 
-## Final
+### Assembled
 <a href="./DSC_00011.JPG"><img src="./DSC_00011.JPG" height="500"></a>
 <a href="./DSC_0002.JPG"><img src="./DSC_0002.JPG" height="500"></a>
+
+### Cable chain x 2
+#### BOM
+| Quantity | Name |
+| :---: | --- |
+| 2 | [M3 screw](../bom/bom.md) 7~8mm | 
+| 8 | [M3 screw](../bom/bom.md) 10mm |
+| 10 | [M3 washer](../bom/bom.md) |
+| 8 | [M3 nut](../bom/bom.md) |
+| 2 | [M3 T nut](../bom/bom.md) |
+| 1 | [Cable chain 10x20 (70~80cm)](../bom/bom.md) |
+
+#### Print details
+* Files: [cable_chain_10x20_holder_frame.stl](../../models/XYZ/cable_chain/cable_chain_10x20_holder_frame.stl),
+[cable_chain_10x20_holder_carriage_1.stl](../../models/XYZ/cable_chain/cable_chain_10x20_holder_carriage_1.stl),
+[cable_chain_10x20_holder_carriage_2.stl](../../models/XYZ/cable_chain/cable_chain_10x20_holder_carriage_2.stl)
+* Time: 15m + 1h
+* Layer height: 0.2mm
+* Weight: 3.5g + 15g
+* Support: Yes
+
+#### Build steps
+The cable chain are generally sold by 1m. Disassemble it with a length around 70cm, and you'll probably need to revert one the the ends.
+Models may evolves or be different than [mine](http://www.ebay.fr/itm/252523694750?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT) (if link no more valid, reference to the image in the bom).
+If you don't find the exact same model, you'll probably need to edit the scad files.
+
+<a href="./DSC_0039.JPG"><img src="./DSC_0039.JPG" height="500"></a>
+<a href="./DSC_0043.JPG"><img src="./DSC_0043.JPG" height="500"></a>

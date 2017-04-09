@@ -86,6 +86,7 @@ Drill two holes into the power strip, then fix the printed part to it with a scr
 * Support: No
 
 #### Build steps
-Drill two holes into the power strip, then fix the printed part to it with a screw, a washer and a self-locking nut. Finally, fix it to the frame.
+For driving the steppers, I recommand a 24V 15A power supply.
+For the spindler (CNC mode) I recommand a second 48V 10A power supply.
 
 <a href="./DSC_0036.JPG"><img src="./DSC_0036.JPG" height="500"></a>
