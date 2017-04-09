@@ -44,3 +44,5 @@
 | | |
 | Spindler (DC brushless motor 48V, with er8) | <a href="./DC_brushless_motor_48v_er8.jpg"><img src="./DC_brushless_motor_48v_er8.jpg" width="100" height="100"></a> |
 | DC brushless motor driver (NVBDH+) | <a href="./DC_brushless_driver_with_hall_NVBDH+.jpg"><img src="./DC_brushless_driver_with_hall_NVBDH+.jpg" width="100" height="100"></a> |
+| | |
+| Spring 4.8mm | <a href="./spring_4_8.jpg"><img src="./spring_4_8.jpg" width="100" height="100"></a> |

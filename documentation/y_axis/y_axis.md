@@ -6,9 +6,10 @@
 | 2 | [Y carriage](#y-carriage-x-2) | 
 | 2 | [Motor holder](#motor-holder-x-2) | 
 | 4 | [Y frame fix](#frame-fix-x-4-2-mirrored) (2 mirrored) |
-| 4 | [Belt tensioner](#) - TODO |
+| 4 | [Belt tensioner](#belt-tensioner-x-4) |
 | 2 | [GT2 Belt](../bom/bom.md) ~80cm |
 | 4 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x 649mm (1.5mm thickness) |
+| 2 | [Cable chain](#cable-chain-x-2) |
 
 ### Y carriage x 2
 #### BOM
