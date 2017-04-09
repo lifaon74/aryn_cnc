@@ -32,10 +32,10 @@ Prusa i3
 	* [x] [X](./documentation/x_axis/x_axis.md)
 	* [x] [Y](./documentation/y_axis/y_axis.md)
 	* [x] [Z](./documentation/z_axis/z_axis.md)
-  
-3. Tools
+
+3. [x] Tools
 	* [ ] Extruder - TODO
-	* [ ] Milling - TODO (design in progress)
+	* [x] [Milling](./documentation/tools/milling/milling.md) - (in experiment)
 
 4. [x] Electronic
 	* [x] [Power supply](./documentation/power_supply/power_supply.md)
