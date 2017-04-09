@@ -38,5 +38,9 @@
 | Male plug | <a href="./male_plug_eu.jpg"><img src="./male_plug_eu.jpg" width="100" height="100"></a> |
 | Power strip | <a href="./power_strip_eu.jpg"><img src="./power_strip_eu.jpg" width="100" height="100"></a> |
 | Power supply | <a href="./power_supply.jpg"><img src="./power_supply.jpg" width="100" height="100"></a> |
-
-
+| | |
+| Cable chain 10x20 | <a href="./cable_chain_10x20.jpg"><img src="./cable_chain_10x20.jpg" width="100" height="100"></a> |
+| Cable chain 15x30 | <a href="./cable_chain_15x30.jpg"><img src="./cable_chain_15x30.jpg" width="100" height="100"></a> |
+| | |
+| Spindler (DC brushless motor 48V, with er8) | <a href="./DC_brushless_motor_48v_er8.jpg"><img src="./DC_brushless_motor_48v_er8.jpg" width="100" height="100"></a> |
+| DC brushless motor driver (NVBDH+) | <a href="./DC_brushless_driver_with_hall_NVBDH+.jpg"><img src="./DC_brushless_driver_with_hall_NVBDH+.jpg" width="100" height="100"></a> |

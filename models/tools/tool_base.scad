@@ -56,22 +56,34 @@ module base_screw_remove_tighten() {
 	color([1, 0, 0, 0.7])
     union() {
         
-        screw_length = 30;
-				screw_head_diameter = 6;
-				screw_head_length = 30; // any value
-        nuts_remove_length = 4;
-				bottom_thickness = 8;
+			screw_length = 35;
+			screw_head_diameter = 6;
+			screw_head_length = 30; // any value
+			nuts_remove_length = 4;
+			bottom_thickness = 8;
+		
+			spring_diameter = 4.8 + 0.2;
+			spring_height = 4;
+		
+			screw_head_z_offset = nuts_remove_length + bottom_thickness;
+			spring_z_offset = base_block_z / 2;
 			
-				screw_head_length_z_offset = nuts_remove_length + bottom_thickness;
-				translate([0, 0, (screw_length / 2) - screw_head_length_z_offset - 0.001])
-			
-        cylinder (r=(screw_diameter / 2), h=screw_length, center=true);
-    
-				translate([0, 0, -(nuts_remove_length / 2)])
-				cylinder ($fn = 6, r=(screws_nuts_side_max / 2), h=nuts_remove_length, center=true);
+			translate([0, 0, (screw_length / 2) - screw_head_z_offset - 0.001])
+		
+			// screw rod
+			cylinder (r=(screw_diameter / 2), h=screw_length, center=true);
+	
+			// locking nut
+			translate([0, 0, -(nuts_remove_length / 2)])
+			cylinder ($fn = 6, r=(screws_nuts_side_max / 2), h=nuts_remove_length, center=true);
 
-				translate([0, 0, -(screw_head_length / 2) - screw_head_length_z_offset])
-				cylinder (r=(screw_head_diameter / 2), h=screw_head_length, center=true);
+			// heade
+			translate([0, 0, -(screw_head_length / 2) - screw_head_z_offset])
+			cylinder (r=(screw_head_diameter / 2), h=screw_head_length, center=true);
+			
+			// spring
+			translate([0, 0, spring_z_offset])
+			cylinder (r=(spring_diameter / 2), h=spring_height * 2, center=true);
     }
 }
 // base_screw_remove_tighten
@@ -104,6 +116,72 @@ module base_screws_remove_tighten() {
     positioned_base_screw_remove_tighten(-1, -1);
 }
 // base_screws_remove_tighten
+
+
+
+module base_screws_remove_fixation() {
+	nut_y = 50;
+	screw_height = 50;
+	
+	union() {
+		translate([0, (nut_y / 2) - (screws_nuts_side_max / 2) - 1, 0])
+		cube([screws_nuts_side_min, nut_y, screw_nuts_height], center = true);
+		
+		translate([0, 0, (screw_height / 2) - (screw_nuts_height / 2) - 1])
+		cylinder (r=(screw_diameter / 2), h=screw_height , center=true);
+	}
+}
+//base_screws_remove_fixation
+
+module positioned_base_screws_remove_fixation_top(pos_x, pos_y) {
+	base_screws_remove_fixation_x_offset = (base_block_x / 2) - (screw_virtual_holder_side / 2);
+	base_screws_remove_fixation_y_offset = 18;
+	base_screws_remove_fixation_z_offset = (base_block_z / 2) - 4.5;
+	
+	
+	translate([base_screws_remove_fixation_x_offset * pos_x, base_screws_remove_fixation_y_offset * pos_y, base_screws_remove_fixation_z_offset])
+	rotate([0, 0, -90 * pos_x])
+	base_screws_remove_fixation();
+}
+// positioned_base_screws_remove_fixation_top
+
+
+module positioned_base_screws_remove_fixation_center(pos_x, pos_y, pos_z) {
+	base_screws_remove_fixation_x_offset = round((base_block_remove_x / 2) - 9);
+	base_screws_remove_fixation_y_offset = round((base_block_y / 2) - 4.5);
+	base_screws_remove_fixation_z_offset = (base_block_z / 2) - 4.5;
+	
+	echo("base_screws_remove_fixation_x_offset", base_screws_remove_fixation_x_offset);
+	echo("base_screws_remove_fixation_y_offset", base_screws_remove_fixation_y_offset);
+	
+	
+	translate([base_screws_remove_fixation_x_offset * pos_x, base_screws_remove_fixation_y_offset * pos_y, base_screws_remove_fixation_z_offset * pos_z])
+	rotate([0, (pos_z == 1) ? 0 : -180, (pos_y == 1) ? 0 : -180])
+	base_screws_remove_fixation();
+}
+// positioned_base_screws_remove_fixation_center
+
+
+module positioned_base_screws_remove_fixation_all() {
+	union() {
+		positioned_base_screws_remove_fixation_center(+1, +1, +1);
+		positioned_base_screws_remove_fixation_center(+1, -1, +1);
+		positioned_base_screws_remove_fixation_center(-1, +1, +1);
+		positioned_base_screws_remove_fixation_center(-1, -1, +1);
+		positioned_base_screws_remove_fixation_center(+1, +1, -1);
+		positioned_base_screws_remove_fixation_center(+1, -1, -1);
+		positioned_base_screws_remove_fixation_center(-1, +1, -1);
+		positioned_base_screws_remove_fixation_center(-1, -1, -1);
+		
+		positioned_base_screws_remove_fixation_top(+1, +1);
+		positioned_base_screws_remove_fixation_top(+1, -1);
+		positioned_base_screws_remove_fixation_top(-1, +1);
+		positioned_base_screws_remove_fixation_top(-1, -1);
+	}
+}
+// positioned_base_screws_remove_fixation_all
+//positioned_base_screws_remove_fixation_all();
+
 
 module base_block() {
     color([1, 1, 0, 0.7])
@@ -163,25 +241,30 @@ module _render_tool_base(cube_pos_z) {
 			if(use_plain_base) plain_base();
 		}
 	} else {
-		union() {
-			difference() {
-					piece(cube_pos_z);
-				
-					translate([0, 0, -(cube_size / 2) * cube_pos_z])
-					cube([cube_size, cube_size, cube_size], center = true);
-				
-						translate([-(cube_size / 2), 0, 0])
+		difference() {
+			union() {
+				difference() {
+						piece(cube_pos_z);
+					
+						translate([0, 0, -(cube_size / 2) * cube_pos_z])
 						cube([cube_size, cube_size, cube_size], center = true);
+					
+					
+	//					translate([-(cube_size / 2), 0, 0])
+	//					cube([cube_size, cube_size, cube_size], center = true);
+				}
+				
+				if(use_plain_base) plain_base();
 			}
 			
-			if(use_plain_base) plain_base();
+			positioned_base_screws_remove_fixation_all();
 		}
 	}
 }
 
 
-use_plain_base = false;
-_render_tool_base(-1); // -1 for bottom, 0, for all, 1 for top
+//use_plain_base = false;
+//_render_tool_base(-1); // -1 for bottom, 0, for all, 1 for top
 
 
 
