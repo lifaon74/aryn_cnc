@@ -81,8 +81,7 @@ module rod(show_rods) {
 // draw a rod
 
 
-module screw() {
-    screw_height = 50;
+module screw(screw_height = 50) {
     cylinder (r=(screw_diameter / 2), h=screw_height , center=true);
 }
 
