@@ -14,10 +14,10 @@ cable_chain_15x30_holder_frame_z_offset = material_thickness / 2;
 
 cable_chain_15x30_fix_base_x = 20;
 cable_chain_15x30_fix_base_y = 7;
-cable_chain_15x30_fix_base_z = 38;
+cable_chain_15x30_fix_base_z = 38 + 0.5;
 
-cable_chain_15x30_fix_base_y_offset = 7;
-cable_chain_15x30_fix_base_z_offset = (cable_chain_15x30_fix_base_z / 2) + (cable_chain_15x30_holder_frame_z / 2) + cable_chain_15x30_holder_frame_z_offset;
+cable_chain_15x30_fix_frame_base_y_offset = 7;
+cable_chain_15x30_fix_frame_base_z_offset = (cable_chain_15x30_fix_base_z / 2) + (cable_chain_15x30_holder_frame_z / 2) + cable_chain_15x30_holder_frame_z_offset;
 
 
 cable_chain_15x30_holder_carriage_x = carriage_block_x;
@@ -39,6 +39,9 @@ cable_chain_15x30_holder_carriage_bridge_z = 4;
 
 cable_chain_15x30_holder_carriage_bridge_z_offset = cable_chain_15x30_holder_carriage_attach_z + (cable_chain_15x30_holder_carriage_bridge_z / 2);
 	
+cable_chain_15x30_fix_bridge_base_y_offset = (cable_chain_15x30_holder_carriage_bridge_y / 2) - (cable_chain_15x30_fix_base_y / 2);
+cable_chain_15x30_fix_bridge_base_z_offset = (cable_chain_15x30_fix_base_z / 2) + (cable_chain_15x30_holder_carriage_bridge_z / 2);
+
 /*
     ROD FIX
 */
@@ -89,16 +92,24 @@ module cable_chain_15x30_fix_base() {
 }
 // cable_chain_15x30_fix_base
 
-module cable_chain_15x30_fix() {
-	translate([0, cable_chain_15x30_fix_base_y_offset, cable_chain_15x30_fix_base_z_offset])
+module cable_chain_15x30_fix_frame() {
+	translate([0, cable_chain_15x30_fix_frame_base_y_offset, cable_chain_15x30_fix_frame_base_z_offset])
 	rotate([0, 0, -20])
 	difference() {
 		cable_chain_15x30_fix_base();
 		fix_screw_chain();
 	}
 }
-// cable_chain_15x30_fix
+// cable_chain_15x30_fix_frame
 
+module cable_chain_15x30_fix_bridge() {
+	translate([0, cable_chain_15x30_fix_bridge_base_y_offset, cable_chain_15x30_fix_bridge_base_z_offset - 0.001])
+	difference() {
+		cable_chain_15x30_fix_base();
+		fix_screw_chain();
+	}
+}
+// cable_chain_15x30_fix_bridge
 
 
 module cable_chain_15x30_holder_carriage_base() {
@@ -122,8 +133,20 @@ module cable_chain_15x30_holder_carriage_bridge_base() {
 }
 // cable_chain_15x30_holder_carriage_bridge_base
 
+
 module cable_chain_15x30_holder_carriage_bridge() {
-	cable_chain_15x30_holder_carriage_bridge_base();
+	difference() {
+		union() {
+			cable_chain_15x30_holder_carriage_bridge_base();
+			cable_chain_15x30_fix_bridge();
+		}
+		
+		translate([+cable_chain_15x30_holder_carriage_attach_x_offset, 0, 0])
+		screw();
+		
+		translate([-cable_chain_15x30_holder_carriage_attach_x_offset, 0, 0])
+		screw();
+	}
 }
 // cable_chain_15x30_holder_carriage_bridge
 
@@ -168,7 +191,7 @@ module cable_chain_15x30_holder_frame() {
 	difference() {
 		union() {
 			cable_chain_15x30_holder_frame_base();
-			cable_chain_15x30_fix();
+			cable_chain_15x30_fix_frame();
 		}
 		
 		union() {
@@ -195,10 +218,10 @@ module cable_chain_15x30_holder_carriage() {
 // cable_chain_10x20_holder_carriage
 
 //cable_chain_15x30_holder_frame();
-cable_chain_15x30_holder_carriage_attach();
+//cable_chain_15x30_holder_carriage_attach();
 //cable_chain_15x30_holder_carriage_bridge();
 
-//cable_chain_15x30_holder_carriage();
+cable_chain_15x30_holder_carriage();
 
 
 
