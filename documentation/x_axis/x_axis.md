@@ -1,13 +1,11 @@
 # X Axis
 
--TODO link table of contents
-
 ## BOM
 | Quantity | Name |
 | :---: | --- |
-| 2 | [X carriage](#) |
-| 2 | [Motor holder](#) |
-| 4 | [Belt tensioner](#) (2 mirrored) |
+| 2 | [X carriage](#x-carriage-x-2) |
+| 2 | [Motor holder](#motor-holder-x-2) |
+| 4 | [Belt tensioner](#belt-tensioner-x-4-2-mirrored) (2 mirrored) |
 | 2 | [GT2 Belt](../bom/bom.md) ~80cm |
 | 2 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
 | 2 | [Cable chain](#cable-chain) |
