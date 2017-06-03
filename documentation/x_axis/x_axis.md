@@ -10,6 +10,7 @@
 | 4 | [Belt tensioner](#) (2 mirrored) |
 | 2 | [GT2 Belt](../bom/bom.md) ~80cm |
 | 2 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
+| 2 | [Cable chain](#cable-chain) |
 
 ### X carriage x 2
 #### BOM
@@ -110,7 +111,7 @@
 | 4 | [M3 nut](../bom/bom.md) |
 
 ##### Print details
-* Files: [belt_holder_x_fix.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_fix.stl)
+* File: [belt_holder_x_fix.stl](../../models/XYZ/motors_carriages/belt_holder/belt_holder_x_fix.stl)
 * Time: 35m
 * Layer height: 0.2mm
 * Weight: 7.5g
@@ -126,3 +127,58 @@ Take care to have exactly the same length (number of teeth) for both of the belt
 
 ## Final
 <a href="./DSC_0030.JPG"><img src="./DSC_0030.JPG" height="500"></a>
+
+### Cable chain
+#### Fix to frame
+##### BOM
+| Quantity | Name |
+| :---: | --- |
+| 2 | [M3 screw](../bom/bom.md) 12mm | 
+| 2 | [M3 screw](../bom/bom.md) 10mm |
+| 4 | [M3 washer](../bom/bom.md) |
+| 2 | [M3 nut](../bom/bom.md) |
+| 2 | [M3 T nut](../bom/bom.md) |
+| 1 | [Cable chain 15x30 (~80cm)](../bom/bom.md) |
+
+##### Print details
+* File: [cable_chain_15x30_holder_frame_v2.stl](../../models/XYZ/cable_chain/cable_chain_15x30_holder_frame_v2.stl)
+* Time: 1h
+* Layer height: 0.2mm
+* Weight: 15g
+* Support: No
+
+#### Fix to carriage
+##### BOM
+| Quantity | Name |
+| :---: | --- |
+| 2 | [M3 screw](../bom/bom.md) 12mm | 
+| 10 | [M3 screw](../bom/bom.md) 10mm |
+| 3 | [M3 screw](../bom/bom.md) 30mm | 
+| 12 | [M3 washer](../bom/bom.md) |
+| 12 | [M3 nut](../bom/bom.md) |
+
+##### Print details
+###### Attaches x 2
+* File: [cable_chain_15x30_holder_carriage_attach.stl](../../models/XYZ/cable_chain/cable_chain_15x30_holder_carriage_attach.stl)
+* Time: 1h25
+* Layer height: 0.2mm
+* Weight: 18g
+* Support: No
+* Infill: 10%
+
+###### Bridge
+* File: [cable_chain_15x30_holder_carriage_bridge.stl](../../models/XYZ/cable_chain/cable_chain_15x30_holder_carriage_bridge.stl)
+* Time: 1h20
+* Layer height: 0.2mm
+* Weight: 22g
+* Support: No
+
+#### Build steps
+The cable chain are generally sold by 1m. Disassemble it with a length around 80cm.
+Models may evolves or be different than [mine](http://www.ebay.fr/itm/15-x-30mm-1M-Plastic-Drag-Chain-40-Towline-Carrier-Wire-Cable-CNC-Machine-Tool-/322440353260?hash=item4b12f155ec:g:OpEAAOSw4A5YuOVZ) (if link no more valid, reference to the image in the bom).
+If you don't find the exact same model, you'll probably need to edit the scad files.
+
+<a href="./DSC_0015.JPG"><img src="./DSC_0015.JPG" height="500"></a>
+<a href="./DSC_0012.JPG"><img src="./DSC_0012.JPG" height="500"></a>
+<a href="./DSC_0014.JPG"><img src="./DSC_0014.JPG" height="500"></a>
+<a href="./DSC_0013.JPG"><img src="./DSC_0013.JPG" height="500"></a>

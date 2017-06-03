@@ -170,13 +170,12 @@ module base_screw_remove_fixation(pos_x, pos_z) {
 	color([1, 0, 0, 0.7])
 	union() {
 		translate([((nut_x / 2) - (screws_nuts_side_min / 2) - 1) * pos_x, 0, 0])
-		cube([nut_x, screws_nuts_side_min * 2, screw_nuts_height], center = true);
+		cube([nut_x, screws_nuts_side_min, screw_nuts_height], center = true);
 		translate([0, 0, ((screw_height / 2) - (screw_nuts_height / 2) - screw_exceed) * pos_z])
 		cylinder (r=(screw_diameter / 2), h=screw_height , center=true);
 	}
 }
 //base_screw_remove_fixation
-
 
 
 module positioned_base_screw_remove_fixation(pos_x, pos_y, pos_z, dispSize) {

@@ -31,7 +31,6 @@ base_acme_y = base_y;
 base_acme_z = base_z;
 
 
-
 rod_offset_z = (rod_length / 2) + (frame_rod_side / 2) + material_thickness_frame_rod_z;
 acme_rod_offset_x = -(base_x / 2) - (bearing_608z_diameter / 2);
 
