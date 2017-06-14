@@ -74,6 +74,10 @@ push_gear_base_screw_relative_z_offset = 5;
 push_gear_base_x = 11;
 push_gear_base_y = 21.5;
 
+fix_screw_x_offset = 7;
+fix_screw_y_offset = (extruder_base_y / 2);
+fix_screw_z_offset = filament_z_offset;
+	
 
 // margins
 material_spacing = 0.5;
@@ -113,16 +117,17 @@ module m3_screw_nut(height = 10) {
 module m3_screw(body_height = 10, head_diameter = 6.5, head_height = 50, nut_heigth = 50) {
 	
 	m3_screw_diameter = 3;
-	z_offset = (body_height / 2) + (head_height / 2) - 0.01;
+	head_z_offset = (body_height / 2) + (head_height / 2) - 0.01;
+	nut_z_offset = -(body_height / 2) - (nut_heigth / 2) + 0.01;
 	
 	color([1, 0, 0])
 	union() {
 		cylinder(r=(m3_screw_diameter / 2), h=body_height, center=true);
 		
-		translate([0, 0, z_offset])
+		translate([0, 0, head_z_offset])
 		cylinder(r=(head_diameter / 2), h=head_height, center=true);
 		
-		translate([0, 0, -z_offset])
+		translate([0, 0, nut_z_offset])
 		cylinder($fn = 6, r=(screws_nuts_side_max / 2), h=nut_heigth, center=true);
 	}
 }
@@ -221,6 +226,19 @@ module drive_gear(mode = "preview") {
 }
 // drive_gear
 
+module fix_screw(pos_y) {
+	translate([-fix_screw_x_offset, fix_screw_y_offset * pos_y, fix_screw_z_offset])
+	rotate([-90 * pos_y, 0, 0])
+	m3_screw(8, 6.5, 3, 3);
+}
+// fix_screw
+
+module fix_screws() {
+	fix_screw(+1);
+	fix_screw(-1);
+}
+// fix_screws
+
 
 module push_gear_screw(mode = "preview") {
 
@@ -254,6 +272,9 @@ module push_gear(mode = "preview") {
 		
 		if(mode == "push_gear_part") {
 			push_gear_screw(mode);
+			
+			translate([-(_push_gear_diameter / 2), 0, 0])
+			cube([_push_gear_diameter, _push_gear_diameter, _push_gear_height], center = true);
 		}
 	}
 }
@@ -476,11 +497,31 @@ module extruder_base_part() {
 			
 			push_gear_base_screws();
 			push_gear_base("base");
+			
+			fix_screws();
 		}
 	}
 }
 // extruder_base_part
 
+module extruder_base_part_splited(zone = "all") {
+	if(zone == "all") {
+		extruder_base_part();
+	} else {
+		difference() {
+			extruder_base_part();
+			
+			cube_height = 50;
+			pos_z = (zone == "top") ? -1 : 1;
+			cube_y_offset = (cube_height / 2) * pos_z + filament_z_offset;
+//			filament_z_offset
+			translate([0, 0, cube_y_offset])
+			cube([1000, 1000, cube_height], center = true);
+		}
+	}
+	
+}
+// extruder_base_part_splited
 
 
 
@@ -497,13 +538,15 @@ module preview_base() {
 	filament_throat();
 	
 	push_gear_base_screws();
+	
+	fix_screws();
 }
 // preview_base
 
 //preview_base();
-push_gear_part();
-//extruder_base_part();
+//push_gear_part();
 
+extruder_base_part_splited("all");
 
 
 
