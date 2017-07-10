@@ -63,7 +63,7 @@ filament_throat_diameter = 4;
 filament_throat_center_height = 10;
 filament_throat_cone_height = 5;
 
-filament_throat_end_diameter = tube_connector_tube_thread_junction_diameter;
+filament_throat_end_diameter = 2.75;
 filament_throat_end_height = 10;
 
 // push_gear_base_screw
@@ -96,7 +96,7 @@ filament_x_offset = (drive_gear_diameter / 2) + (filament_diameter / 2) - 0.1; /
 drive_gear_z_offset = filament_z_offset - 2;
 
 push_gear_screw_height = push_gear_height + (bearing_height_spacing * 2) + (material_thickness * 2);
-push_gear_x_offset = (push_gear_diameter / 2) + (drive_gear_diameter / 2) + 1;
+push_gear_x_offset = (push_gear_diameter / 2) + (drive_gear_diameter / 2) + 0.5;
 push_gear_z_offset = filament_z_offset;
 
 
@@ -546,7 +546,7 @@ module preview_base() {
 //preview_base();
 //push_gear_part();
 
-extruder_base_part_splited("all");
+extruder_base_part_splited("bot");
 
 
 
