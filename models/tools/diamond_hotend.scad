@@ -23,14 +23,10 @@ module positioned_e3d_v6(mode = "default", e3d_v6_radiator_diameter_margin = 0, 
 
 module positioned_e3d_v6_all(mode = "default", e3d_v6_radiator_diameter_margin = 0, e3d_v6_fix_diameter_margin = 0) {
 	
-	rotate([0, 0, 0])
-	positioned_e3d_v6(mode, e3d_v6_radiator_diameter_margin, e3d_v6_fix_diameter_margin);
-	
-	rotate([0, 0, 120])
-	positioned_e3d_v6(mode, e3d_v6_radiator_diameter_margin, e3d_v6_fix_diameter_margin);
-	
-	rotate([0, 0, 240])
-	positioned_e3d_v6(mode, e3d_v6_radiator_diameter_margin, e3d_v6_fix_diameter_margin);
+	for(a = [0 : 1 : 2]) {	
+		rotate([0, 0, 120 * a])
+		positioned_e3d_v6(mode, e3d_v6_radiator_diameter_margin, e3d_v6_fix_diameter_margin);
+	}
 }
 // positioned_e3d_v6_all
 

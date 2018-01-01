@@ -41,10 +41,16 @@ module e3d_v6_fix(margin = 0) {
 module e3d_v6_radiator(mode = "default", margin = 0) {
 	e3d_v6_radiator_diameter_with_margin = e3d_v6_radiator_diameter + margin * 2;
 	if(mode == "plenty") {
-		_e3d_v6_radiator_height = e3d_v6_radiator_lamella_distance * e3d_v6_radiator_lamella_number;
+		_e3d_v6_radiator_height = e3d_v6_radiator_lamella_distance * (e3d_v6_radiator_lamella_number - 1) + margin;
 		
 		translate([0, 0, (_e3d_v6_radiator_height / 2)])
 		cylinder(r=(e3d_v6_radiator_diameter_with_margin / 2), h=_e3d_v6_radiator_height, center=true);
+		
+		_e3d_v6_radiator_small_height = e3d_v6_radiator_lamella_distance;
+		_e3d_v6_fix_diameter_outer = e3d_v6_fix_diameter_outer + margin * 2;
+		
+		translate([0, 0, _e3d_v6_radiator_height + (_e3d_v6_radiator_small_height / 2)])
+		cylinder(r=(_e3d_v6_fix_diameter_outer / 2), h=_e3d_v6_radiator_small_height, center=true);
 	} else {
 		union() {
 			for(z = [0 : 1 : e3d_v6_radiator_lamella_number - 1]) {
