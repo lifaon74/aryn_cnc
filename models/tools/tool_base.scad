@@ -119,9 +119,7 @@ module base_screws_remove_tighten() {
 
 
 
-module base_screws_remove_fixation() {
-	nut_y = 50;
-	screw_height = 50;
+module base_screws_remove_fixation(nut_y = 50, screw_height = 50) {
 	
 	union() {
 		translate([0, (nut_y / 2) - (screws_nuts_side_max / 2) - 1, 0])
@@ -162,12 +160,14 @@ module positioned_base_screws_remove_fixation_center(pos_x, pos_y, pos_z) {
 // positioned_base_screws_remove_fixation_center
 
 
-module positioned_base_screws_remove_fixation_all() {
+module positioned_base_screws_remove_fixation_all(mode = "default") {
 	union() {
-		positioned_base_screws_remove_fixation_center(+1, +1, +1);
-		positioned_base_screws_remove_fixation_center(+1, -1, +1);
-		positioned_base_screws_remove_fixation_center(-1, +1, +1);
-		positioned_base_screws_remove_fixation_center(-1, -1, +1);
+		if(mode != "no_fixation_top") {
+			positioned_base_screws_remove_fixation_center(+1, +1, +1);
+			positioned_base_screws_remove_fixation_center(+1, -1, +1);
+			positioned_base_screws_remove_fixation_center(-1, +1, +1);
+			positioned_base_screws_remove_fixation_center(-1, -1, +1);
+		}
 		positioned_base_screws_remove_fixation_center(+1, +1, -1);
 		positioned_base_screws_remove_fixation_center(+1, -1, -1);
 		positioned_base_screws_remove_fixation_center(-1, +1, -1);
@@ -232,7 +232,7 @@ module piece(piece_top) {
 }
 // piece
 
-module _render_tool_base(cube_pos_z) {
+module _render_tool_base(cube_pos_z, top_fixation_mode = "default") {
 	cube_size = 1000;
 	if(cube_pos_z == 0) {
 		rods(show_rods);
@@ -257,7 +257,7 @@ module _render_tool_base(cube_pos_z) {
 				if(use_plain_base) plain_base();
 			}
 			
-			positioned_base_screws_remove_fixation_all();
+			positioned_base_screws_remove_fixation_all(top_fixation_mode);
 		}
 	}
 }
