@@ -119,13 +119,13 @@ module base_screws_remove_tighten() {
 
 
 
-module base_screws_remove_fixation(nut_y = 50, screw_height = 50) {
+module base_screws_remove_fixation(nut_y = 50, screw_height = 50, nut_z = screw_nuts_height) {
 	
 	union() {
 		translate([0, (nut_y / 2) - (screws_nuts_side_max / 2) - 1, 0])
-		cube([screws_nuts_side_min, nut_y, screw_nuts_height], center = true);
+		cube([screws_nuts_side_min, nut_y, nut_z], center = true);
 		
-		translate([0, 0, (screw_height / 2) - (screw_nuts_height / 2) - 1])
+		translate([0, 0, (screw_height / 2) - (nut_z / 2) - 1])
 		cylinder (r=(screw_diameter / 2), h=screw_height , center=true);
 	}
 }

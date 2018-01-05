@@ -54,7 +54,6 @@ module positioned_aluminium_extrusion_rod_screw_holder(rel_pos, rotation) {
 	screw();
 }
 // positioned_aluminium_extrusion_rod_screw_holder
-
 module positioned_aluminium_extrusion_rod() {
 	
 	delta = (aluminium_extrusion_length / 2) + (aluminium_extrusion_size / 2) + 1;
