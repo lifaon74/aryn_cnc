@@ -49,7 +49,7 @@ diamond_hot_end_fan_holder_feet_z = 40;
 
 diamond_hot_end_bltouch_x = 18 + 2 * 4;
 diamond_hot_end_bltouch_y = 11.53;
-diamond_hot_end_bltouch_wire_x = 12;
+diamond_hot_end_bltouch_wire_x = 14;
 diamond_hot_end_bltouch_wire_y = 3;
 
 diamond_hot_end_bltouch_holder_z = 7;
@@ -219,7 +219,7 @@ module diamond_hot_end_piramidal_base() {
 			}
 		}
 		
-		cylinder (r=15, h=diamond_hot_end_piramidal_base_z * 2 , center=true);
+		cylinder (r=17, h=diamond_hot_end_piramidal_base_z * 2 , center=true);
 	}
 }
 // diamond_hot_end_piramidal_base
