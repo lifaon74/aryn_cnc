@@ -45,4 +45,9 @@
 | Spindler (DC brushless motor 48V, with er8) | <a href="./DC_brushless_motor_48v_er8.jpg"><img src="./DC_brushless_motor_48v_er8.jpg" width="100" height="100"></a> |
 | DC brushless motor driver (NVBDH+) | <a href="./DC_brushless_driver_with_hall_NVBDH+.jpg"><img src="./DC_brushless_driver_with_hall_NVBDH+.jpg" width="100" height="100"></a> |
 | | |
+| Diamond HotEnd 3 pipes | <a href="./diamond_hotend_3.jpg"><img src="./diamond_hotend_3.jpg" width="100" height="100"></a> |
+| | |
+| Fan 40mm | <a href="./fan_40mm.jpg"><img src="./fan_40mm.jpg" width="100" height="100"></a> |
+| Radial fan 50mm | <a href="./radial_fan_50mm.jpg"><img src="./radial_fan_50mm.jpg" width="100" height="100"></a> |
+| | |
 | Spring 4.8mm | <a href="./spring_4_8.jpg"><img src="./spring_4_8.jpg" width="100" height="100"></a> |

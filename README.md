@@ -31,10 +31,11 @@ Prusa i3
 2. [x] Axis
 	* [x] [X](./documentation/x_axis/x_axis.md)
 	* [x] [Y](./documentation/y_axis/y_axis.md)
-	* [x] [Z](./documentation/z_axis/z_axis.md)
+	* [x] [Z](./documentation/z_axis/z_axis.md) - TODO : plate
 
 3. [x] Tools
-	* [ ] Extruder - TODO
+	* [x] Extruder
+    * [Diamond Head](./documentation/tools/extruder/diamond_head/diamond_head.md) - (in experiment)
 	* [x] [Milling](./documentation/tools/milling/milling.md) - (in experiment)
 
 4. [x] Electronic

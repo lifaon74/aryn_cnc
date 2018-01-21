@@ -6,7 +6,7 @@
 | 2 | [Tool Fix](#tool-fix) | 
 | 1 | [Spindler Holder](#spindler-holder) | 
 
-### Tool Fix
+### Tool Fix x 2
 #### BOM
 | Quantity | Name |
 | :---: | --- |
