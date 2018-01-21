@@ -50,4 +50,6 @@
 | Fan 40mm | <a href="./fan_40mm.jpg"><img src="./fan_40mm.jpg" width="100" height="100"></a> |
 | Radial fan 50mm | <a href="./radial_fan_50mm.jpg"><img src="./radial_fan_50mm.jpg" width="100" height="100"></a> |
 | | |
+| BL Touch | <a href="./bl_touch.jpg"><img src="./bl_touch.jpg" width="100" height="100"></a> |
+| | |
 | Spring 4.8mm | <a href="./spring_4_8.jpg"><img src="./spring_4_8.jpg" width="100" height="100"></a> |
