@@ -74,3 +74,5 @@
 
 #### Build steps
 <a href="./DSC_0007.JPG"><img src="./DSC_0007.JPG" height="500"></a>
+
+-- TODO : air blower on plastic
