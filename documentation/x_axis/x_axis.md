@@ -8,7 +8,7 @@
 | 4 | [Belt tensioner](#belt-tensioner-x-4-2-mirrored) (2 mirrored) |
 | 2 | [GT2 Belt](../bom/bom.md) ~80cm |
 | 2 | [Aluminum bar](../bom/bom.md) 16mm x 16mm x Xmm (1.5mm thickness) |
-| 2 | [Cable chain](#cable-chain) |
+| 1 | [Cable chain](#cable-chain) |
 
 ### X carriage x 2
 #### BOM
@@ -145,6 +145,20 @@ Take care to have exactly the same length (number of teeth) for both of the belt
 * Weight: 15g
 * Support: No
 
+#### Smooth chain slide
+##### BOM
+| Quantity | Name |
+| :---: | --- |
+| 2 | [M3 screw](../bom/bom.md) 6mm | 
+| 2 | [M3 T nut](../bom/bom.md) |
+
+##### Print details
+* File: [corder_3d_smooth_slide.stl](../../models/frame/corder_3d_smooth_slide.stl)
+* Time: 40m
+* Layer height: 0.1mm
+* Weight: 4.5g
+* Support: Yes
+
 #### Fix to carriage
 ##### BOM
 | Quantity | Name |
@@ -179,4 +193,5 @@ If you don't find the exact same model, you'll probably need to edit the scad fi
 <a href="./DSC_0015.JPG"><img src="./DSC_0015.JPG" height="500"></a>
 <a href="./DSC_0012.JPG"><img src="./DSC_0012.JPG" height="500"></a>
 <a href="./DSC_0014.JPG"><img src="./DSC_0014.JPG" height="500"></a>
+<a href="./DSC_0004.JPG"><img src="./DSC_0004.JPG" height="500"></a>
 <a href="./DSC_0013.JPG"><img src="./DSC_0013.JPG" height="500"></a>
