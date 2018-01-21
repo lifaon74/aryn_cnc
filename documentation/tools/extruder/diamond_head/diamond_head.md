@@ -6,6 +6,7 @@
 | 2 | [Tool Fix](#tool-fix) | 
 | 1 | [Diamond HotEnd Holder](#diamond-hotend-holder) | 
 | 1 | [BL Touch - optional](#bl-touch) | 
+| 1 | [Radial Fan - optional](#radial-fan) | 
 
 ### Tool Fix x 2
 [Same part as milling](../../milling/milling.md)
@@ -54,3 +55,22 @@
 #### Build steps
 <a href="./DSC_0005.JPG"><img src="./DSC_0005.JPG" height="500"></a>
 <a href="./DSC_0006.JPG"><img src="./DSC_0006.JPG" height="500"></a>
+
+### Radial Fan 
+#### BOM
+| Quantity | Name |
+| :---: | --- |
+| 1 | [Radial fan 50mm](../../../bom/bom.md) | 
+| 1 | [M3 screw](../../../bom/bom.md) 8mm | 
+| 2 | [M3 screw](../../../bom/bom.md) 20mm | 
+| 2 | [M3 nut](../../../bom/bom.md) | 
+
+#### Print details
+* Files: [diamond_hot_end_fan_holder.stl](../../../../models/tools/hotend/diamond_hot_end_fan_holder.stl)
+* Time: 8m
+* Layer height: 0.2mm
+* Weight: 2g
+* Support: No
+
+#### Build steps
+<a href="./DSC_0007.JPG"><img src="./DSC_0007.JPG" height="500"></a>
